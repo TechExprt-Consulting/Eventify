@@ -1,0 +1,7 @@
+.banner{
+    background-image: url('../../images/Banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 10rem;
+    border-radius: 15px;
+}

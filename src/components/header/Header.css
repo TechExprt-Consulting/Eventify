@@ -1,0 +1,38 @@
+.top-bar{
+    background-color: rgb(78, 80, 76);
+}
+.list-name{
+    color: White;
+    font-weight: 600;
+}
+.main-btn{
+    background-color: #EC167F;
+    color: white;
+    font-weight: 600;
+}
+.main-btn:hover{
+    background-color: white;
+    color: #EC167F;
+    font-weight: 600;
+}
+
+.main-top-banner{
+    background-image: url('../../images/banner-img.png');
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+  }
+#search-sub-heading{
+    color:"white"
+  }
+
+.search-box{
+    width: 600px;
+}
+.searchButton{
+    background-color: #EC167F;
+}
+
+.search-main-div{
+    padding-top: 70px;
+}

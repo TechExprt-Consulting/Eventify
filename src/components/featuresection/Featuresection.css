@@ -1,0 +1,17 @@
+.mainSection{
+    margin-top: 40px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 15px; */
+}
+
+.featuretitlecontent{
+    font-size: 18px;
+}
+
+.featurecontent{
+
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+}

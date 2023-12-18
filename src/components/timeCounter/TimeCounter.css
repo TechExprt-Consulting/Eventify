@@ -1,0 +1,22 @@
+.Info-div{
+
+    background-image: url('../../images/time-bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+}
+
+.Info-counter{
+    position: relative;
+    bottom: 60px;
+    background-image: url('../../images/Time-gradient.png');
+    background-size: cover;
+    background-position: center;
+    height: 8rem;
+    margin-left: 10rem; /* Adjust the value based on your requirements */
+    margin-right: 10rem;
+}
+.numbercounter{
+    font-size: 45px;
+    font-weight: 800;
+}
