@@ -1,5 +1,21 @@
-.top-bar{
-    background-color: rgb(78, 80, 76);
+.navbar-main{
+    background-color: #362f33;
+}
+@media (max-width:576px) {
+    .navbar-brand img {
+        height: 5vh;
+        
+    }
+    .navbar-toggler{
+        background-color: #EC167F;
+        
+        
+    }
+    .navbar-toggler-icon{
+       height: 3vh;
+       width: 4vw;
+    }
+   
 }
 .list-name{
     color: White;
@@ -16,12 +32,7 @@
     font-weight: 600;
 }
 
-.main-top-banner{
-    background-image: url('../../images/banner-img.png');
-    background-size: cover;
-    background-position: center;
-    height: 30rem;
-  }
+
 #search-sub-heading{
     color:"white"
   }

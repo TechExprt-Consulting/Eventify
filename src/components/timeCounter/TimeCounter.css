@@ -3,8 +3,66 @@
     background-image: url('../../images/time-bg.png');
     background-size: cover;
     background-position: center;
-    height: 30rem;
+    height: 35vw;
 }
+
+.Info-div-content{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-top: 10vh;
+
+}
+
+
+
+.Info-div-content div button{
+    color: white;
+    font-weight: 500;
+    background-color: #FAAC1D;
+    margin-top: 5vh;
+}
+
+.Info-div-content div button:hover{
+    color: white;
+    font-weight: 500;
+    background-color: #EC167F;
+}
+
+.Info-div-content p{
+    color:#FAAC1D;
+    font-weight: 500;
+    font-size: 1.7vw;
+}
+
+.Info-div-content p{
+    color:#FAAC1D;
+    font-weight: 400;
+    font-size: 1.7vw;
+}
+
+.Info-div-content h1 {
+    color: white;
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.Info-div-innerInfo{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-weight: 500;
+    margin-top: 1vw;
+}
+
+
+
+
+
+
+
+
 
 .Info-counter{
     position: relative;
@@ -12,11 +70,87 @@
     background-image: url('../../images/Time-gradient.png');
     background-size: cover;
     background-position: center;
-    height: 8rem;
-    margin-left: 10rem; /* Adjust the value based on your requirements */
-    margin-right: 10rem;
+    height: 21vh;
+    margin: 0 7vw 0 7vw;
 }
 .numbercounter{
-    font-size: 45px;
+    font-size: 3vw;
     font-weight: 800;
+}
+
+.Info-counter-inner-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vh;
+}
+
+
+@media (max-width:476px) {
+    .Info-div{
+        margin-top: 65vh;
+        background-image: url('../../images/time-bg.png');
+        background-size: cover;
+        background-position: center;
+        height: 38vh;
+    }
+
+    
+.Info-div-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8vh;
+ 
+ }
+
+ .Info-div-content p{
+    color:#FAAC1D;
+    font-weight: 500;
+    font-size: 1.7vh;
+}
+
+.Info-div-content h1 {
+    color: white;
+    font-size: 4vh;
+    font-weight: 600;
+}
+
+.Info-div-innerInfo{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-weight: 500;
+    margin-top: 1vh;
+}
+
+.Info-div-innerInfo div{
+
+    font-size: 1.2vh;
+
+}
+#inner-id{
+    padding: 0.8vh;
+}
+.Info-div-content div button{
+    color: white;
+    font-weight: 500;
+    font-size: 1.2vh;
+    background-color: #FAAC1D;
+    margin-top: 1vh;
+   
+}
+.Info-counter{
+    position: relative;
+    margin-top: 4vh;
+    background-image: url('../../images/Time-gradient.png');
+    background-size: cover;
+    background-position: center;
+    height: 10vh;
+    
+}
+.innertimer{
+    font-size: 5vh;
+}
 }

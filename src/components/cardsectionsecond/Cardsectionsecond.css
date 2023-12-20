@@ -2,6 +2,17 @@
     display: flex;
     justify-content: center;
     font-weight:660;
-    font-size: 25px;
+    font-size: 2vw;
     
 }
+@media (max-width:576px) {
+    .sectionSecondTitle{
+        display: flex;
+        justify-content: center;
+        font-weight:660;
+        font-size: 3vh;
+        
+    }
+}
+
+

@@ -7,19 +7,23 @@ import MiddleBanner from './components/middleBanner/MiddleBanner';
 import Featuresection from './components/featuresection/Featuresection';
 import TimeCounter from './components/timeCounter/TimeCounter';
 import BannerSection from './components/movies/bannerSection/BannerSection';
+import MainBannerSearch from './components/main-banner-search/MainBannerSearch';
 function App() {
   return (
     <div className="App">
       
-
-      <Header/>
-   
-      <Cardsectionfirst/>
-      <Cardsectionsecond/>
-      <MiddleBanner/>
-      <Featuresection/>
-      <TimeCounter/>
-      <BannerSection/>
+     <div><Header/></div>
+     <div><MainBannerSearch/></div>
+     <div><Cardsectionfirst/></div>
+      
+      <div><Cardsectionsecond/></div>
+      
+      <div><MiddleBanner/></div>
+      <div><Featuresection/></div>
+      <div><TimeCounter/></div>
+      
+      
+      {/* <BannerSection/> */}
     </div>
   );
 }

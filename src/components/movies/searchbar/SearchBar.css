@@ -1,0 +1,20 @@
+.green-dot{
+    height: 8px;
+    width: 8px;
+    background-color: green;
+    border-radius: 10px;
+}
+
+.orange-dot{
+    height: 8px;
+    width: 8px;
+    background-color: rgb(245, 183, 13);
+    border-radius: 10px;
+}
+
+.red-dot{
+    height: 8px;
+    width: 8px;
+    background-color: rgb(245, 13, 13);
+    border-radius: 10px;
+}

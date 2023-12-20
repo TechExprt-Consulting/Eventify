@@ -3,7 +3,7 @@ import './MiddleBanner.css'
 import Banner from '../../images/Banner.png'
 const MiddleBanner = () => {
   return (
-    <div className='conatiner mx-2'>
+    <div className='conatiner'>
      <div className='banner'></div>
     </div>
   )

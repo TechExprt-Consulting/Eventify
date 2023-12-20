@@ -44,7 +44,7 @@ const Cardsectionsecond = () => {
     position: relative;
   
     img {
-      width: 95%;
+      width: 100%;
       height: 320px;
       object-fit: cover;
       border-radius: 8px;

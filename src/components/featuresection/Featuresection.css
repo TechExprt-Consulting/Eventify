@@ -1,17 +1,113 @@
-.mainSection{
-    margin-top: 40px;
-    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 15px; */
+.main-feature-div{
+
+    display: flex;
+    flex-direction: column;
+  
+  
 }
 
-.featuretitlecontent{
-    font-size: 18px;
+.upper-feature-div{
+    margin-top: 4vw;
+ 
+    width: 100vw;
+    justify-content: center;
+    height: 12vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
-.featurecontent{
+.lower-feature-div{
+    margin-top: 4vw;
+    
+    width: 100vw;
+    justify-content: center;
+    height: 12vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 
-    font-size: 16px;
-    font-weight: 350;
-    line-height: 1.5;
-    color: #333;
-    margin-bottom: 20px;
+}
+
+
+
+.upper-feature-inner-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 10vw;
+    width: 25vw;
+    box-shadow: -2px -2px 13px -5px rgba(0,0,0,0.75);
+}
+
+.upper-feature-inner-div-first{
+ padding: 1vw 2vw;
+}
+
+.upper-feature-inner-div-second{
+
+
+
+}
+
+.upper-feature-inner-div-second h5{
+    font-size: 1.5vw;
+
+}
+
+.upper-feature-inner-div-second p{
+    font-weight:450;
+
+}
+
+@media (max-width:576px) {
+    
+    .main-feature-div{
+
+     display: flex;
+     flex-direction: column;
+        
+    }
+
+ 
+    
+    .upper-feature-div{
+        
+        width: 100vw;
+    
+    }
+    
+    .lower-feature-div{
+      
+        margin-top: 60vh;
+        width: 100vw;
+        
+    
+    }
+
+    .upper-feature-inner-div{
+        box-shadow: -2px -2px 13px -5px rgba(0,0,0,0.75);
+        height: 18vh;
+        width: 100vw;
+        margin: 2vh;
+       
+    }
+    
+    .upper-feature-inner-div-first img{
+        padding-bottom: 3vh;
+
+    }
+    .upper-feature-inner-div-second h5{
+        font-size: 2.5vh;
+    
+    }
+    .upper-feature-inner-div-second p{
+        font-weight:450;
+        font-size: 1.8vh;
+    
+    }
 }

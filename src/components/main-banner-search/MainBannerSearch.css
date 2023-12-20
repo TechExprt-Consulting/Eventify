@@ -1,0 +1,107 @@
+.main-top-banner{
+    background-image: url('../../images/banner-img.png');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+.banner-content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}  
+
+.banner-content p{
+    color: #FAAC1D;
+    padding-left: 4vw;
+    font-size: 1.5vw;
+}
+
+.banner-content h1{
+    color: white;
+    font-size: 3.6vw;
+    margin-top: -1vw;
+}
+
+.banner-content-search{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner-content-search{
+    width: 40vw;
+    height: 3vw;
+}
+
+.banner-content-search span{
+height: 3vw;
+border-radius: 5px 0px 0px 5px;
+}
+.banner-content-search button{
+    background-color: #EC167F;
+    color: white;
+    border-radius: 0px 5px 5px 0px ;
+    padding-left:2vw;
+    padding-right:2vw;
+    font-weight: 700;
+    height: 3vw;
+}
+
+@media (max-width:576px) {
+    .main-top-banner{
+        background-image: url('../../images/banner-img.png');
+        background-size: cover;
+        background-position: center;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+    .banner-content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 0%;
+      }  
+
+      .banner-content p{
+        color: #FAAC1D;
+        font-size: 1.8vh;
+        
+    } 
+
+    .banner-content h1{
+        color: white;
+        font-size: 4.1vh;
+        margin-top: -1vh;
+    }
+
+    .banner-content-search{
+        width: 90vw;
+        height: 3vw;
+        
+    }
+    .banner-content-search span{
+        height: 10.6vw;
+        border-radius: 5px 0px 0px 5px;
+        }
+
+    .banner-content-search button{
+        background-color: #EC167F;
+        color: white;
+        border-radius: 0px 5px 5px 0px ;
+        padding-left:2vw;
+        padding-right:2vw;
+        font-weight: 500;
+        height: 10.6vw;
+    }    
+}
