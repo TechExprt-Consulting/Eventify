@@ -6,8 +6,19 @@ import images1 from '../../images/movie2.jpg'
 import './Cardsectionfirst.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css'; 
+import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 const Cardsectionfirst = () => {
 
+
+  const navigate = useNavigate();
+
+  
+  const cardclick =()=> {
+    
+    console.log("hello")
+    navigate('/movie/banner')
+  }
 const Body = styled.div`
   background: #f3f3f3;
   position: absolute;
@@ -103,19 +114,22 @@ const Reference = styled.div`
     width: 100%;
   }`
 
+
+
   
   return (
     <div className='container'>
         <div className='sectionTitle mt-5'>
             <span>Recommended Movies</span>
         </div>
+      
        <CarouselContainer>
           <Carousel cols={5} showDots loop>
             
-          
-               <Carousel.Item  >
-                <Card>
-                  <LazyLoadImage src={images}  effect="blur" />
+         
+               <Carousel.Item >
+                <Card >
+                  <LazyLoadImage src={images} onclick={cardclick}  effect="blur" />
                   <div>
                     <Title>Avengers</Title>
                     <span>Action/Sci-Fi</span>
@@ -124,7 +138,7 @@ const Reference = styled.div`
                   <Mask />
                 </Card>
               </Carousel.Item>
-
+              
               <Carousel.Item  >
                 <Card>
                   <LazyLoadImage src={images1} effect="blur" />

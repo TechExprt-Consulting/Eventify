@@ -29,13 +29,13 @@ const TimeCounter = () => {
       </div>
       <div className='Info-counter'>
         <div className='Info-counter-inner-div'>
-            <div className='numbercounter'><h1 style={{fontSize:"3vw",color:'white'}}>17</h1><p id="innertimer" style={{fontSize:"3vw",color:'white'}}>Days</p></div>
-            <div className=' ' style={{fontSize:"3.5vw",color:'white', margin:"0 3.5vw 0 3.5vw"}}>:</div>
-            <div className='numbercounter'><h1 style={{fontSize:"3vw",color:'white' }}>18</h1><p id="innertimer" style={{fontSize:"3vw",color:'white'}}>Hours</p></div>
+            <div className='numbercounter' style={{textAlign:"center"}}><h1 style={{fontSize:"3vw",color:'white'}}>17</h1><p id="innertimer" style={{fontSize:"2vw",color:'white'}}>Days</p></div>
+            <div className=' ' style={{fontSize:"3.5vw",color:'white', margin:"0 3.5vw 0 3.5vw",textAlign:"center"}}>:</div>
+            <div className='numbercounter' style={{textAlign:"center"}}><h1 style={{fontSize:"3vw",color:'white' }}>18</h1><p id="innertimer" style={{fontSize:"2vw",color:'white'}}>Hours</p></div>
             <div className='' style={{fontSize:"3.5vw",color:'white',margin:"0 3.5vw 0 3.5vw"}}>:</div>
-            <div className='numbercounter'><h1 style={{fontSize:"3vw",color:'white'}}>12</h1><p id="innertimer" style={{fontSize:"3vw",color:'white'}}>Minutes</p></div>
+            <div className='numbercounter' style={{textAlign:"center"}}><h1 style={{fontSize:"3vw",color:'white'}}>12</h1><p id="innertimer" style={{fontSize:"2vw",color:'white'}}>Minutes</p></div>
             <div className='' style={{fontSize:"3.5vw",color:'white',margin:"0 3.5vw 0 3.5vw"}}>:</div>
-            <div className='numbercounter'><h1 style={{fontSize:"3vw",color:'white'}}>20</h1><p id="innertimer" style={{fontSize:"3vw",color:'white'}}>Second</p></div>
+            <div className='numbercounter' style={{textAlign:"center"}}><h1 style={{fontSize:"3vw",color:'white'}}>20</h1><p id="innertimer" style={{fontSize:"2vw",color:'white'}}>Second</p></div>
         </div>
       </div>
     </>

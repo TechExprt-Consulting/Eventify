@@ -53,6 +53,16 @@ border-radius: 5px 0px 0px 5px;
     height: 3vw;
 }
 
+.banner-content-search button:hover{
+    background-color: #EC167F;
+    color: white;
+    border-radius: 0px 5px 5px 0px ;
+    padding-left:2vw;
+    padding-right:2vw;
+    font-weight: 700;
+    height: 3vw;
+}
+
 @media (max-width:576px) {
     .main-top-banner{
         background-image: url('../../images/banner-img.png');

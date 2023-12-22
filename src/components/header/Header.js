@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './Header.css'
 import SearchIcon from '@mui/icons-material/Search';
-const header = () => {
+import { Link } from 'react-router-dom';
+const Header = () => {
+  const [activeLink, setActiveLink] = useState(0);
 
+  const handleLinkClick = (index) => {
+    setActiveLink(index);
+  };
 
   return (
     
@@ -17,14 +22,14 @@ const header = () => {
             <div className="collapse navbar-collapse offset-4 " id="navbarSupportedContent">
               <ul className="navbar-nav ">
                 <li className="nav-item mx-4 mt-1 pt-1">
-                  <span className='list-name'>Home</span>
+                  <span className='list-name'><Link to="/" className={activeLink === 0 ? 'custom-linkactive' : 'custom-link'} onClick={() => handleLinkClick(0)}>Home</Link></span>
                 </li>
                 <li className="nav-item mx-4 mt-1 pt-1">
-                  <span className='list-name'>Movies</span>
+                  <span className='list-name'><Link to="/movie" className={activeLink === 1 ? 'custom-linkactive' : 'custom-link'} onClick={() => handleLinkClick(1)} >Movies</Link></span>
                 </li>
                 
                 <li className="nav-item mx-4 mt-1 pt-1">
-                  <span className='list-name' >Events</span>
+                  <span className='list-name' ><Link to="/Event" className={activeLink === 2 ? 'custom-linkactive' : 'custom-link'} onClick={() => handleLinkClick(2)}>Events</Link></span>
                 </li>
                 <li className="nav-item mx-4 mt-1 pt-1">
                   <span className='list-name'>Plays</span>
@@ -51,4 +56,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header
