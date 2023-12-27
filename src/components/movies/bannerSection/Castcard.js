@@ -47,12 +47,14 @@ const RowHead = styled.div`
 
 const Card = styled.div`
   position: relative;
-
+  text-align: center;
   img {
-    width: 90%;
-    height: 90px;
+    width: 10vw;
+    height: 20vh;
     object-fit: cover;
-    border-radius: 100%;
+    border-radius: 50%;
+
+    
   }
 
  
@@ -69,7 +71,7 @@ const Title = styled.div`
   margin-top:10px;
   font-weight:600;
   font-size: 18px;
- 
+
   height: 25px;
   overflow: hidden;
   
@@ -111,8 +113,8 @@ const Reference = styled.div`
 
   return (
     <div>
-                          <CarouselContainer>
-                        <Carousel cols={6} showDots loop>
+              <CarouselContainer>
+                        <Carousel cols={5} showDots loop>
                             
                         
                             <Carousel.Item  >
@@ -170,6 +172,18 @@ const Reference = styled.div`
                                     <Title>Tripti</Title>
                                     <span>Co-Actress</span>
                                 
+                                </div>
+                                <Mask />
+                                </Card>
+                            </Carousel.Item>
+
+                            <Carousel.Item  >
+                                <Card>
+                                <LazyLoadImage src={Sourabh} effect="blur" />
+                                <div>
+                                <Title>Sourabh Sukla</Title>
+                                    <span>Co-Actor</span>
+                                    
                                 </div>
                                 <Mask />
                                 </Card>

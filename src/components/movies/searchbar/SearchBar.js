@@ -7,7 +7,7 @@ import ClosedCaptionOffOutlinedIcon from '@mui/icons-material/ClosedCaptionOffOu
 
 const SearchBar = () => {
   return (
-    <div className='mx-5'>
+    <div className=''>
         <div className='d-flex justify-content-between'>
         <div className='col-md-6'>
                 <div className="input-group">

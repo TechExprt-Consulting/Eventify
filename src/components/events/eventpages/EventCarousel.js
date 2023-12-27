@@ -14,7 +14,8 @@ const EventCarousel = () => {
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2900,
-        cssEase: "linear"
+        cssEase: "linear",
+        
       };
   return (
     <div className=''  >
@@ -22,15 +23,15 @@ const EventCarousel = () => {
         <Slider {...settings}>
           
          <div className='' style={{width:"100vw"}}>
-            <img  src='moviebanner.jpg' style={{height:"60vh" ,width:"100vw"}}/>
+            <img  src='salarbanner.jpeg' style={{height:"45vh" ,width:"100vw"}}/>
+           
+          </div>
+          <div className='' style={{width:"100vw" }}>
+            <img  src='dunki.jpeg' style={{height:"45vh" ,width:"100vw"}}/>
            
           </div>
           <div className='' style={{width:"100vw"}}>
-            <img  src='midnightmovie.jpg' style={{height:"60vh" ,width:"100vw"}}/>
-           
-          </div>
-          <div className='' style={{width:"100vw"}}>
-            <img  src='Pathaan-01.jpg' style={{height:"60vh" ,width:"100vw"}}/>
+            <img  src='promo.jpeg' style={{height:"45vh" ,width:"100vw"}}/>
            
           </div>
         </Slider>

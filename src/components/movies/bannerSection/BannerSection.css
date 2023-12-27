@@ -1,8 +1,34 @@
 .movie-Banner{
-    background-image: url('../../../images/animal-banner.png');
+    background-image: url('../../../images/animalbackgroud\ poster.jpg');
     background-size: cover;
     background-position: center;
-    height: 27rem;
+    height: 70vh;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+}
+.about-section{
+    padding: 0 2vw;
+    margin-top: 3vh;
+}
+.banner-movie-info{
+   
+    line-height: 1.5vh;
+    padding-left: 2vw;
+
+}
+
+.title-movie-banner{
+    font-size: 1.6vw;
+    font-size: 600;
+    
+}
+.title-content{
+    text-align: left;
+}
+
+.movie-all-info{
+    width: 70vw;
 }
 
 .sub-date-heading{
@@ -13,3 +39,17 @@
     font-weight: 500;
 }
 
+
+.date-day{
+    font-size:1vw ;
+  
+    margin: 0%;
+}
+
+#days{
+    font-size: 1.4vw;
+}
+.date-calander{
+    width: 70vw;
+    padding-left: 1.5vw;
+}

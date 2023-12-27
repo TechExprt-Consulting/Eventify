@@ -1,7 +1,8 @@
 import React from 'react'
 import "./Eventcard.css"
-import img2 from "../../../images/movie2.jpg"
-import img3 from "../../../images/movie3.jpg"
+import img2 from "../../../images/salar.jpeg"
+import img3 from "../../../images/sambhadur.jpeg"
+import aqua from "../../../images/aqua.jpeg"
 const Eventcard = () => {
   return (
     <div className='mt-4'>
@@ -16,8 +17,8 @@ const Eventcard = () => {
         
        <div className='card-section row justify-content-center mt-3 '>
 
-           <div className="card" >
-                <img src="ranveer kapoor.jpg" className="card-img-top" alt="..."/>
+           <div className="card my-2" >
+                <img src={aqua} className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h6>Animal</h6>
                     <p className="card-text">A</p>
@@ -25,7 +26,7 @@ const Eventcard = () => {
                 </div>
             </div>
 
-            <div className="card" >
+            <div className="card my-2" >
                 <img src={img2} 
                 className="card-img-top" alt="..."/>
                 <div className="card-body">
@@ -36,7 +37,7 @@ const Eventcard = () => {
             </div>
 
 
-            <div className="card" >
+            <div className="card my-2" >
                 <img src={img3} 
                 className="card-img-top" alt="..."/>
                 <div className="card-body">
@@ -47,8 +48,8 @@ const Eventcard = () => {
             </div>
 
 
-            <div className="card" >
-                <img src="ranveer kapoor.jpg" className="card-img-top" alt="..."/>
+            <div className="card my-2" >
+                <img src={aqua} className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h6>Animal</h6>
                     <p className="card-text">A</p>
@@ -56,7 +57,7 @@ const Eventcard = () => {
                 </div>
             </div>
 
-            <div className="card" >
+            <div className="card my-2" >
                 <img src={img2} 
                 className="card-img-top" alt="..."/>
                 <div className="card-body">
@@ -67,7 +68,7 @@ const Eventcard = () => {
             </div>
 
 
-            <div className="card" >
+            <div className="card my-2" >
                 <img src={img3} 
                 className="card-img-top" alt="..."/>
                 <div className="card-body">
@@ -77,8 +78,8 @@ const Eventcard = () => {
                 </div>
             </div>
             
-            <div className="card" >
-                <img src="ranveer kapoor.jpg" className="card-img-top" alt="..."/>
+            <div className="card my-2" >
+                <img src={aqua} className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h6>Animal</h6>
                     <p className="card-text">A</p>
@@ -86,7 +87,7 @@ const Eventcard = () => {
                 </div>
             </div>
 
-            <div className="card" >
+            <div className="card my-2" >
                 <img src={img2} 
                 className="card-img-top" alt="..."/>
                 <div className="card-body">
@@ -97,7 +98,7 @@ const Eventcard = () => {
             </div>
 
 
-            <div className="card" >
+            <div className="card my-2" >
                 <img src={img3} 
                 className="card-img-top" alt="..."/>
                 <div className="card-body">

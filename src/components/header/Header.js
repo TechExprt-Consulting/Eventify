@@ -15,7 +15,7 @@ const Header = () => {
         <div>
         <nav className="navbar navbar-expand-lg navbar-main ">
           <div className="container-fluid ">
-            <span className="navbar-brand " href="#"><img src='Eventify-logo.png'></img></span>
+            <span className="navbar-brand" href="#"><img src='Eventify-logo.png'></img></span>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>

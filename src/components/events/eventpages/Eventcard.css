@@ -26,6 +26,9 @@
 .card-section{
     flex: 1;
 }
+.card-text{
+    padding: 0;
+}
 @media  (max-width: 576px) {
     .card-section{
      

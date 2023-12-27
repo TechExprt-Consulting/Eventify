@@ -14,7 +14,8 @@ import MovieSearchResult from '../moviesearchresult/MovieSearchResult';
 
 
 const BannerSection = () => {
-    const Body = styled.div`
+    
+const Body = styled.div`
   background: #f3f3f3;
   position: absolute;
   top: 0;
@@ -57,8 +58,9 @@ const Card = styled.div`
 
   position: relative;
   border:3px solid #E0E0E0;
-  width: 90%;
-  height: 80px;
+  width: 100%;
+  text-align: center;
+  height: 14vh;
   border-radius:10px;
 
   display:flex;
@@ -112,132 +114,25 @@ const Reference = styled.div`
   return (
     <div>
         <div className=''>
-            <div className='movie-Banner'></div>
+            <div className='movie-Banner'>
+                 <div className='banner-movie-info'>
+                  <div className='star-sign'><StarOutlinedIcon style={{color:"#FAAC1D"}}/><StarOutlinedIcon style={{color:"#FAAC1D"}}/><StarOutlinedIcon style={{color:"#FAAC1D"}}/><StarOutlinedIcon style={{color:"#FAAC1D"}}/><StarOutlinedIcon style={{color:"#FAAC1D"}}/></div>
+                  <h2 style={{color:"white"}}>Animal</h2>
+                  <p style={{color:"white"}}>A  3h 21m Action,Thriller</p>
+                  <p className=' ' style={{color:"white"}}>Directed by: sam | Written by : Michael Waldron | Produced by :Kevin</p>
+                 </div>
 
-            <div className='row'>
-                <div className='col-md-5 mx-4'>
-                    <div className='star-sign mt-5 px-4'><StarOutlinedIcon style={{color:"#FAAC1D"}}/><StarOutlinedIcon style={{color:"#FAAC1D"}}/><StarOutlinedIcon style={{color:"#FAAC1D"}}/><StarOutlinedIcon style={{color:"#FAAC1D"}}/><StarOutlinedIcon style={{color:"#FAAC1D"}}/></div>
-                    <div>
-                        <h2 className='mt-2 px-4'>Animal</h2>
-                        <h5 className='mt-2 px-4'>Release on 1 Dec 2023</h5>
-                        <h5 className='mt-2 px-4'>A  3h 21m Action,Thriller</h5>
-                        <p className='mt-2 px-4 '>Directed by: sam | Written by : Michael Waldron | Produced by :Kevin</p>
-                    <div className=''>
-                        <CarouselContainer>
-                        <Carousel cols={7} showDots loop>
-                            
-                        
-                            <Carousel.Item  >
-                                <Card>
-                                
-                                <div>
-                                <span className='sub-date-heading p-0 m-0' style={{fontSize:"14px"}}>Mon</span>
-                                    <h5 className='fw-bold m-0 p-0'>01</h5>
-                                <span className='sub-date-heading'>Dec</span>    
-                                </div>
-                        
-                                </Card>
-                            </Carousel.Item>
+            </div>
 
-                            <Carousel.Item  >
-                                <Card>
-                                
-                                <div>
-                                <span className='sub-date-heading' style={{fontSize:"14px"}}>Mon</span>
-                                <h5  style={{margin:"0",Padding:"0"}}>02</h5>
-                                <span className='sub-date-heading'>Dec</span>    
-                                </div>
-                            
-                                </Card>
-                            </Carousel.Item>
-
-                            <Carousel.Item  >
-                                <Card>
-                                
-                                <div>
-                                <span className='sub-date-heading' style={{fontSize:"14px"}}>Mon</span>
-                                <h5  style={{margin:"0",Padding:"0"}}>03</h5>
-                                <span className='sub-date-heading'>Dec</span>    
-                                </div>
-                                
-                                </Card>
-                            </Carousel.Item>
-                            
-
-                            <Carousel.Item  >
-                                <Card>
-                                
-                                <div>
-                                <span className='sub-date-heading' style={{fontSize:"14px"}}>Mon</span>
-                                <h5  style={{margin:"0",Padding:"0"}}>04</h5>
-                                <span className='sub-date-heading'>Dec</span>    
-                                </div>
-                                <Mask />
-                                </Card>
-                            </Carousel.Item>
-
-                            <Carousel.Item  >
-                                <Card>
-                                
-                                <div>
-                                <span className='sub-date-heading' style={{fontSize:"14px"}}>Mon</span>
-                                <h5  style={{margin:"0",Padding:"0"}}>05</h5>
-                                <span className='sub-date-heading'>Dec</span>    
-                                </div>
-                        
-                                </Card>
-                            </Carousel.Item>
-                            
-                            <Carousel.Item  >
-                                <Card>
-                                
-                                <div>
-                                <span className='sub-date-heading' style={{fontSize:"14px"}}>Mon</span>
-                                <h5  style={{margin:"0",Padding:"0"}}>06</h5>
-                                <span className='sub-date-heading'>Dec</span>    
-                                </div>
-                                
-                                </Card>
-                            </Carousel.Item>
-
-                            <Carousel.Item  >
-                                <Card>
-                                
-                                <div>
-                                <span className='sub-date-heading' style={{fontSize:"14px"}}>Mon</span>
-                                <h5 style={{margin:"0",Padding:"0"}}>07</h5>
-                                <span className='sub-date-heading'>Dec</span>    
-                                </div>
-                            
-                                </Card>
-                            </Carousel.Item>
-                        
-                            <Carousel.Item  >
-                                <Card>
-                                
-                                <div>
-                                <span className='sub-date-heading' style={{fontSize:"14px"}}>Mon</span>
-                                <h5 style={{margin:"0",Padding:"0"}}>07</h5>
-                                <span className='sub-date-heading'>Dec</span>    
-                                </div>
-                        
-                                </Card>
-                            </Carousel.Item>
-                        
-                            
-                    
-                        </Carousel>
-                        </CarouselContainer>
-                        </div>
+            <div className='mt-5'>
+              
+                <div className='col-md-12 about-section'>
+                    <div className='movie-all-info'>
+                        <h4 className='title-movie-banner'>About Movie</h4>
+                        <p className='title-content'>Animal showcases a violent world set against the backdrop of a troubled relationship between Ranbir's character Ranvijay Singh and his father Balbir Singh, played by Anil Kapoor.A father, who is often away due to work, is unable to comprehend the intensity of his son's love. Ironically, this fervent love and admiration for his father and family creates conflict between the father and son.</p>
                     </div>
-                </div>
-                <div className='col-md-5 mx-5 pl-2 mt-5'>
-                    <div className='mt-2'>
-                        <h4 style={{fontWeight:"600"}}>About Movie</h4>
-                        <p>Animal showcases a violent world set against the backdrop of a troubled relationship between Ranbir's character Ranvijay Singh and his father Balbir Singh, played by Anil Kapoor.</p>
-                    </div>
-                    <div>
-                     <h4 style={{fontWeight:"600"}}>Cast</h4>   
+                    <div className='movie-all-info'>
+                     <h4 className='title-movie-banner'>Cast</h4>   
                     <Castcard/>
                     </div>
                     <div></div>
@@ -245,6 +140,105 @@ const Reference = styled.div`
             </div>
         </div>
         <SearchBar/>
+        <div className='date-calander mt-3'>
+        <CarouselContainer>
+                        <Carousel cols={5} showDots loop>
+                            
+                        
+                            <Carousel.Item  >
+                                <Card>
+                      
+                                    <div>
+                                        <p className='date-day' id='days'>Monday</p>
+                                      <h6>01</h6>
+                                        <p className='date-day'>December</p>
+                                    
+                                    </div>
+                                <Mask />
+                                </Card>
+                            </Carousel.Item>
+
+                            <Carousel.Item  >
+                                <Card>
+                
+                                <div>
+                                        <p className='date-day' id='days'>Tuesday</p>
+                                      <h6>02</h6>
+                                        <p className='date-day'>December</p>
+                                    
+                                </div>
+                                <Mask />
+                                </Card>
+                            </Carousel.Item>
+
+                            <Carousel.Item  >
+                                <Card>
+                      
+                                <div>
+                                        <p className='date-day' id='days'>Wednesday</p>
+                                      <h6>03</h6>
+                                        <p className='date-day'>December</p>
+                                    
+                                </div>
+                                <Mask />
+                                </Card>
+                            </Carousel.Item>
+
+                            <Carousel.Item  >
+                                <Card>
+                      
+                                <div>
+                                        <p className='date-day' id='days'>Thursday</p>
+                                      <h6>04</h6>
+                                        <p className='date-day'>December</p>
+                                    
+                                </div>
+                                <Mask />
+                                </Card>
+                            </Carousel.Item>
+
+                            <Carousel.Item  >
+                                <Card>
+                            
+                                <div>
+                                        <p className='date-day' id='days'>Friday</p>
+                                      <h6>05</h6>
+                                        <p className='date-day'>December</p>
+                                    
+                                </div>
+                                <Mask />
+                                </Card>
+                            </Carousel.Item>
+
+                            <Carousel.Item  >
+                                <Card>
+                              
+                                <div>
+                                        <p className='date-day' id='days'>Satarday</p>
+                                      <h6>06</h6>
+                                        <p className='date-day'>December</p>
+                                    
+                                </div>
+                                <Mask />
+                                </Card>
+                            </Carousel.Item>
+
+                            <Carousel.Item  >
+                                <Card>
+                               
+                                <div>
+                                        <p className='date-day' id='days'>Sunday</p>
+                                      <h6>07</h6>
+                                        <p className='date-day'>December</p>
+                                    
+                                </div>
+                                <Mask />
+                                </Card>
+                            </Carousel.Item>
+
+                        </Carousel>
+                    </CarouselContainer>
+        </div>
         <MovieSearchResult/>
     </div>
   )

@@ -15,6 +15,8 @@ import Home from './components/Home';
 import Movie from './components/Movie';
 import Event from './components/Event';
 import Login from './components/login/Login';
+import Signup from './components/signup/Signup';
+import ListYourShow from './components/listyourshow/ListYourShow';
 function App() {
   return (
     <div className="App">
@@ -26,6 +28,8 @@ function App() {
           <Route path="/movie/banner"  element={<BannerSection/>} />
           <Route path="/Event"  element={<Event/>} />
           <Route path="/login"  element={<Login/>} />
+          <Route path="/Signup"  element={<Signup/>} />
+          <Route path="/ListYourShow"  element={<ListYourShow/>} />
         </Routes>
 
      

@@ -1,0 +1,307 @@
+.Signup-background{
+    background-image: url('../../../public/login.jpg');
+    width: 100vw;
+    height:90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .inner-Signup-box{
+     width: 26vw;
+     height: 70vh;
+     background-color: white;
+     border-radius: 1.5vw;
+     padding: 2vw;
+   
+   }
+   
+   .form-label{
+       font-size: 1vw;
+       font-weight: 600;
+   }
+   
+   .input-login{
+       height: 5vh;  
+       border-left: none;
+   }
+   .input-group-text{
+       height: 5vh;
+   }
+   
+   .forgot{
+       display: flex;
+       justify-content: right;
+   }
+   .forgot-password{
+       font-size: .8vw;
+       color: blue;
+       font-weight: 600;
+   }
+   #imageclass{
+       height: 6vh;
+   }
+   
+   input::placeholder {
+       font-size: 1vw;
+     }
+   
+   #signin{
+       width: 100%;
+       background-color:#EC167F;
+       border-radius: 2vw;
+       color: white;
+       font-size: 1vw;
+       font-weight: 600;
+   }
+   .end-content{
+       display: flex;
+       justify-content: center;
+   }
+   .sign-up-free{
+       font-size: .9vw;
+       font-weight: 700;
+   }
+   
+   #free-sign-up{
+       color:blue
+   }
+   
+   #login-icon{
+       height: 1vw;
+   }
+   
+   .input-group-text{
+       border-right:none ;
+   }
+   
+   
+   @media (max-width:576px) {
+   
+       .inner-Signup-box{
+           width: 90vw;
+           height: 68vh;
+           background-color: white;
+           border-radius: 2vh;
+           padding: 2vh;
+         
+         }
+       #imageclass{
+           height: 5vh;
+           
+       }
+   
+       .form-label{
+           font-size: 2vh;
+           font-weight: 500;
+       }
+   
+       .input-login{
+           height: 5vh;  
+           border-left: none;
+       }
+   
+       .forgot-password{
+           font-size: 1.5vh;
+           color: blue;
+           font-weight: 600;
+       }
+   
+       
+       input::placeholder {
+           font-size: 2vh;
+       }
+   
+       #signin{
+           width: 100%;
+           background-color:#EC167F;
+           border-radius: 2vw;
+           color: white;
+           font-size: 2vh;
+           font-weight: 500;
+       }
+   
+       .sign-up-free{
+           font-size: 1.8vh;
+           font-weight: 700;
+       }
+   
+       #login-icon{
+           height: 2vh;
+       }
+   }
+   
+   
+   @media (min-width: 577px) and (max-width: 768px) {
+    
+     
+       .inner-login-box{
+           width: 90vw;
+           height: 45vh;
+           background-color: white;
+           border-radius: 2vh;
+           padding: 2vh;
+         
+         }
+       #imageclass{
+           height: 5vh;
+           
+       }
+   
+       .form-label{
+           font-size: 2vh;
+           font-weight: 500;
+       }
+   
+       .input-login{
+           height: 5vh;  
+           border-left: none;
+       }
+   
+       .forgot-password{
+           font-size: 1.5vh;
+           color: blue;
+           font-weight: 600;
+       }
+   
+       
+       input::placeholder {
+           font-size: 2vh;
+       }
+   
+       #signin{
+           width: 100%;
+           background-color:#EC167F;
+           border-radius: 2vw;
+           color: white;
+           font-size: 2vh;
+           font-weight: 500;
+       }
+   
+       .sign-up-free{
+           font-size: 1.8vh;
+           font-weight: 700;
+       }
+   
+       #login-icon{
+           height: 2vh;
+       }
+       
+     }
+   
+     @media (min-width: 769px) and (max-width: 992px){
+   
+       .inner-login-box{
+           width: 90vw;
+           height: 45vh;
+           background-color: white;
+           border-radius: 2vh;
+           padding: 2vh;
+         
+         }
+       #imageclass{
+           height: 4vh;
+           
+       }
+   
+       .form-label{
+           font-size: 2vh;
+           font-weight: 500;
+       }
+   
+       .input-login{
+           height: 5vh;  
+           border-left: none;
+       }
+   
+       .forgot-password{
+           font-size: 1.5vh;
+           color: blue;
+           font-weight: 600;
+       }
+   
+       
+       input::placeholder {
+           font-size: 2vh;
+       }
+   
+       #signin{
+           width: 100%;
+           background-color:#EC167F;
+           border-radius: 2vw;
+           color: white;
+           font-size: 2vh;
+           font-weight: 500;
+       }
+   
+       .sign-up-free{
+           font-size: 1.8vh;
+           font-weight: 700;
+       }
+   
+       #login-icon{
+           height: 2vh;
+       }
+       
+   
+     }
+   
+     @media (min-width: 993px) and (max-width: 1200px){
+   
+       .inner-login-box{
+           width: 90vw;
+           height: 45vh;
+           background-color: white;
+           border-radius: 2vh;
+           padding: 2vh;
+         
+         }
+       #imageclass{
+           height: 4vh;
+           
+       }
+   
+       .form-label{
+           font-size: 2vh;
+           font-weight: 500;
+       }
+   
+       .input-login{
+           height: 5vh;  
+           border-left: none;
+       }
+   
+       .forgot-password{
+           font-size: 1.5vh;
+           color: blue;
+           font-weight: 600;
+       }
+   
+       
+       input::placeholder {
+           font-size: 2vh;
+       }
+   
+       #signin{
+           width: 100%;
+           background-color:#EC167F;
+           border-radius: 2vw;
+           color: white;
+           font-size: 2vh;
+           font-weight: 500;
+       }
+   
+       .sign-up-free{
+           font-size: 1.8vh;
+           font-weight: 700;
+       }
+   
+       #login-icon{
+           height: 2vh;
+       }
+   
+     }

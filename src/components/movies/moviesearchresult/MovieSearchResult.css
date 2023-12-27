@@ -1,0 +1,55 @@
+.main-seat-div{
+    display: flex;
+    border: 1px solid grey;
+    padding: 1vw;
+    margin: 1vw;
+    border-radius: 1vw;
+}
+
+.theaterinfo{
+     
+    color: black;
+    text-align: center;
+    margin-top: 2vh;
+    /* background-color: aqua;
+    */
+  
+
+}
+#theater-name{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.button-info{
+  
+}
+
+.online-info{
+    display: flex;
+    justify-content: center;
+}
+
+.theatertime{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#extrainfo{
+    margin-left: 2vw;
+
+}
+
+.new-feature{
+    font-size:1vw ;
+}
+
+#time-info{
+    width: 10vw;
+    border: 1px solid rgb(153,153,153);
+    height: 16vh;
+    text-align: center;
+}
+.seat-type{
+    font-size: .8vw;
+}

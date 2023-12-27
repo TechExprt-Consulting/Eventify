@@ -140,7 +140,7 @@ input::placeholder {
  
   
     .inner-login-box{
-        width: 90vw;
+        width: 80vw;
         height: 45vh;
         background-color: white;
         border-radius: 2vh;
@@ -196,7 +196,7 @@ input::placeholder {
   @media (min-width: 769px) and (max-width: 992px){
 
     .inner-login-box{
-        width: 90vw;
+        width: 60vw;
         height: 45vh;
         background-color: white;
         border-radius: 2vh;
@@ -253,7 +253,7 @@ input::placeholder {
   @media (min-width: 993px) and (max-width: 1200px){
 
     .inner-login-box{
-        width: 90vw;
+        width: 60vw;
         height: 45vh;
         background-color: white;
         border-radius: 2vh;

@@ -1,0 +1,91 @@
+.mainlistyourshow{
+    display: flex;
+}
+
+.ListInfo{
+    width: 50vw;
+    height: 100vh;
+
+     padding: 5vw;
+    justify-content: center;
+    text-align: center;
+}
+
+.listInfoContent{
+    display: flex;
+    width: 40vw;
+    margin: 1.5vw 0;
+}
+
+
+#listInfoContent-first{
+    padding: 0 2vw;
+   
+}
+
+.listInfoContent-img{
+    width:30%;
+}
+.listInfoContent-data{
+ width: 60%;
+ text-align: left;
+}
+
+.content-detail{
+    font-size: 1vw;
+}
+
+
+
+
+.ListInput{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237,240,244);
+
+}
+
+.register-otp{
+ 
+    width: 26vw;
+    height:35vh ;
+    padding: 2vw;
+}
+
+#ListInput-heading{
+    font-family: 1vw;
+}
+
+.otp-label{
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+#otpbutton{
+    width: 100%;
+    color: white;
+    background-color:rgb(221,221,221);
+    font-weight: 600;
+}
+
+.lower-otp-content{
+
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+#otp-login-span{
+    color: rgb(62,110,234);
+}
+
+#otp-login-span2{
+    color: rgb(62,110,234);
+}
+
+.lower-otp-content-para{
+    font-size: .8vw;
+    text-align: center;
+}
