@@ -3,7 +3,7 @@ import "./Eventcard.css"
 import img2 from "../../../images/salar.jpeg"
 import img3 from "../../../images/sambhadur.jpeg"
 import aqua from "../../../images/aqua.jpeg"
-const Eventcard = () => {
+const Eventcard = ({data,eve}) => {
   return (
     <div className='mt-4'>
         
@@ -20,9 +20,9 @@ const Eventcard = () => {
            <div className="card my-2" >
                 <img src={aqua} className="card-img-top" alt="..."/>
                 <div className="card-body">
-                    <h6>Animal</h6>
-                    <p className="card-text">A</p>
-                    <p className="card-text">Hindi</p>
+                    <h6>{data.name}</h6>
+                    <p className="card-text">{data.certificate}</p>
+                    <p className="card-text">{data.languages}</p>
                 </div>
             </div>
 

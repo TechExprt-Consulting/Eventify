@@ -1,0 +1,30 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+.mainnavbar{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ height: 8.5vh;
+ background-color: aqua;
+ align-items: center;
+}
+
+.right-nav-list{
+   
+
+}
+
+.right-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    
+}
+
+.right-list li{
+    margin: 0 1vw;
+}

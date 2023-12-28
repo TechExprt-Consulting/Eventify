@@ -24,22 +24,23 @@ const Header = () => {
                 <li className="nav-item mx-4 mt-1 pt-1">
                   <span className='list-name'><Link to="/" className={activeLink === 0 ? 'custom-linkactive' : 'custom-link'} onClick={() => handleLinkClick(0)}>Home</Link></span>
                 </li>
-                <li className="nav-item mx-4 mt-1 pt-1">
+                <li className="nav-item mx-3 mt-1 pt-1">
                   <span className='list-name'><Link to="/movie" className={activeLink === 1 ? 'custom-linkactive' : 'custom-link'} onClick={() => handleLinkClick(1)} >Movies</Link></span>
                 </li>
                 
-                <li className="nav-item mx-4 mt-1 pt-1">
+                <li className="nav-item mx-3 mt-1 pt-1">
                   <span className='list-name' ><Link to="/Event" className={activeLink === 2 ? 'custom-linkactive' : 'custom-link'} onClick={() => handleLinkClick(2)}>Events</Link></span>
                 </li>
-                <li className="nav-item mx-4 mt-1 pt-1">
-                  <span className='list-name'>Plays</span>
-                </li>
-                <li className="nav-item mx-4 mt-1 pt-1 ">
+
+                <li className="nav-item mx-3 mt-1 pt-1 ">
                   <span className='list-name'>Activity</span>
                 </li>
-                <li className="nav-item mx-4 ">
+                <li className="nav-item mx-3 mt-1 pt-1 ">
+                  <span className='list-name'><Link to="/ListYourShow" className={activeLink === 4 ? 'custom-linkactive' : 'custom-link'} onClick={() => handleLinkClick(4)}>List your Show</Link></span>
+                </li>
+                <li className="nav-item mx-3 ">
               
-                <button className="btn btn main-btn" >List your Show</button>
+                <button className="btn btn main-btn" >LogIn</button>
                 </li>
               </ul>
               

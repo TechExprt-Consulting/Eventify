@@ -1,0 +1,97 @@
+.main-seats-div{
+ 
+}
+
+.seat-indicater{
+    display: flex;
+   margin: 0 2vw;
+    flex-wrap: wrap;
+
+}
+.indicater-box{
+   display: flex;
+   margin: .5vw;
+}
+.indicater1{
+    width: 1.2vw;
+    height: 2.5vh;
+    background-color: #fff;
+    margin: 0 0.3vw;
+    border: 1px solid grey;
+}
+
+.indicater2{
+    width: 1.2vw;
+    height: 2.5vh;
+    background-color: grey;
+    margin: 0 0.3vw;
+    border: 1px solid grey;
+}
+
+.indicater3{
+    width: 1.2vw;
+    height: 2.5vh;
+    background-color: rgb(116, 192, 114);
+    margin: 0 0.3vw;
+    border: 1px solid grey;
+}
+.main-screen{
+    margin-top: 12vh;
+    display: flex;
+    
+    justify-content: center;
+
+    margin-bottom: 15vh;
+}
+.screen{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #EC167F;
+    border-radius: 1vw 1vw 0 0;
+    height: .5vw;
+    box-shadow: inset 0 0 10px rgba(73, 18, 18, 0.1); 
+    padding: 1vh;
+    width: 60vw;
+    
+}
+
+.seat-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#seat{
+    height: 3vh;
+    width: 1.5vw;
+  
+    list-style: none;
+    margin: .2vw;
+    border: 1px solid grey;
+}
+
+.chair{
+
+ margin-top: 4vh;
+ margin-bottom: 3vw ;
+}
+.chair .row{
+   margin: 0 4vw;
+   
+   }
+#seat:nth-child(6){
+    margin-right: 5vw;
+}
+
+#seat:nth-last-child(6){
+    margin-right: 5vw;
+}
+
+#pay-button{
+    background-color: #EC167F;
+    color: #fff;
+    font-size: 1.2vw;
+    font-weight: 600;
+    padding: .8vw 4vw;
+}
