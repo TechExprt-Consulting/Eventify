@@ -19,6 +19,7 @@ import Signup from './components/signup/Signup';
 import ListYourShow from './components/listyourshow/ListYourShow';
 import Navbar from './components/navbar/Navbar';
 import Movieseat from './components/movieseat/Movieseat';
+import Footer from './components/footer/Footer';
 function App() {
   return (
     <div className="App">
@@ -34,8 +35,9 @@ function App() {
           <Route path="/ListYourShow"  element={<ListYourShow/>} />
           <Route path="/navbar"  element={<Navbar/>} /> 
           <Route path="/movieseat"  element={<Movieseat/>} />
+          <Route path="/footer"  element={<Footer/>} />
         </Routes>
-
+        
      
       </Router>
      {/* <div><Header/></div>

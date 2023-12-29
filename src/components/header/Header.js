@@ -1,8 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect} from 'react';
 import './Header.css'
 import SearchIcon from '@mui/icons-material/Search';
 import { Link } from 'react-router-dom';
 const Header = () => {
+  const [scrolling, setScrolling] = useState(false);
+
+  // Add a scroll event listener
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check the scroll position (you can adjust the threshold as needed)
+      const isScrolling = window.scrollY > 50;
+
+      // Update the state based on the scroll position
+      setScrolling(isScrolling);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const [activeLink, setActiveLink] = useState(0);
 
   const handleLinkClick = (index) => {
@@ -12,8 +32,8 @@ const Header = () => {
   return (
     
     
-        <div className='header-name'>
-        <nav className="navbar navbar-expand-lg navbar-main bg-transperent">
+        <div className='header-name '>
+        <nav className={`header-name ${scrolling ? 'navbar navbar-expand-lg navbar-main-scroll bg-transperent ': activeLink === 0 ?'navbar navbar-expand-lg navbar-main bg-transperent':'navbar navbar-expand-lg navbar-main-rest bg-transperent'}`}>
           <div className="container-fluid ">
             <span className="navbar-brand offset-1" href="#"><img src='Eventify-logo.png'></img></span>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

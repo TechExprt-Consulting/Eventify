@@ -2,7 +2,7 @@
     background-image: url('../../images/banner-img.png');
     background-size: cover;
     background-position: center;
-    height: 85vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

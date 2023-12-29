@@ -6,6 +6,8 @@ import MiddleBanner from './middleBanner/MiddleBanner'
 import TimeCounter from './timeCounter/TimeCounter'
 import Header from './header/Header'
 import Featuresection from './featuresection/Featuresection'
+import Footer from './footer/Footer'
+
 const Home = () => {
   return (
     <div>
@@ -13,9 +15,10 @@ const Home = () => {
       <MainBannerSearch/>
       <Cardsectionfirst/>
       <Cardsectionsecond/>
-      <MiddleBanner/>
+      {/* <MiddleBanner/> */}
       {/* <Featuresection/> */}
       <TimeCounter/>
+      <Footer/>
     </div>
   )
 }

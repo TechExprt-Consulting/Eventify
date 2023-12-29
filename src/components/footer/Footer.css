@@ -1,0 +1,10 @@
+.footer-list{
+    list-style: none;
+    padding: 0%;
+    text-decoration: none;
+}
+
+.footer-list li link{
+   
+    text-decoration: none;
+}

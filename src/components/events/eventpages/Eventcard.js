@@ -14,10 +14,10 @@ const Eventcard = () => {
     <div className='d-flex justify-content-center'>
     <div className='mt-2  d-flex flex-wrap justify-content-start'>
 
-        {[...Array(12).keys()].map((index) => (
-            <Card key={index} sx={{ maxWidth: 190, flex: '1 0 calc(20% - 8px)', marginBottom: 8, marginRight: 3 }}>
+        {[...Array(10).keys()].map((index) => (
+            <Card key={index} sx={{ maxWidth: 200, flex: '1 0 calc(20% - 10px)', marginBottom: 8, marginRight: 3 }}>
             <CardMedia
-                sx={{ height: 300, width: '100%', objectFit: 'cover' }}
+                sx={{ height: 350, width: 200, objectFit: 'cover' }}
                 image={img3}
                 title="green iguana"
             />

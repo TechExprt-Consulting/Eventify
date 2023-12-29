@@ -1,9 +1,9 @@
 .sectionTitle{
     display: flex;
-    justify-content: center;
+    justify-content:start;
     font-weight:660;
     font-size: 2vw;
-    
+    margin-left: 1.5vw;
 }
 
 @media(max-width:576px){
