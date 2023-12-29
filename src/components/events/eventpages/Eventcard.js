@@ -7,17 +7,18 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import img2 from "../../../images/salar.jpeg"
-import img3 from "../../../images/sambhadur.jpeg"
+import img3 from "../../../images/m23.jpeg"
 import aqua from "../../../images/aqua.jpeg"
 const Eventcard = () => {
   return (
-    <div className='d-flex justify-content-center'>
-    <div className='mt-2  d-flex flex-wrap justify-content-start'>
-
-        {[...Array(10).keys()].map((index) => (
-            <Card key={index} sx={{ maxWidth: 200, flex: '1 0 calc(20% - 10px)', marginBottom: 8, marginRight: 3 }}>
+    <div className=''>
+      <div><h5>Movies in indore</h5></div>  
+    <div className='mt-2  d-flex flex-wrap justify-content-center'>
+        
+        {[...Array(14).keys()].map((index) => (
+            <Card key={index} sx={{ width:275, marginBottom: 8, marginRight: 3 }}>
             <CardMedia
-                sx={{ height: 350, width: 200, objectFit: 'cover' }}
+                sx={{ height: 310, objectFit: 'cover' }}
                 image={img3}
                 title="green iguana"
             />
