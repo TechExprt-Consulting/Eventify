@@ -1,5 +1,15 @@
+.header-name {
+    position: sticky;
+    
+    /* Set your desired background color */
+    z-index: 100; /* Set a higher z-index to ensure it appears above other elements */
+    /* Add padding as needed */
+    /* Add other styling as needed */
+  }
+  
+
 .navbar-main{
-    background-color:rgb(77,0,57);
+    background-color: rgba(255, 255, 255, 0.1);
     
 }
 
@@ -23,6 +33,20 @@
     }
    
 }
+
+@media (max-width:992px) {
+    .navbar-main{
+        background-color:grey;
+        
+    }
+
+    .navbar-toggler{
+        background-color: #EC167F;
+        
+        
+    }
+    
+}
 .list-name{
  
 }
@@ -30,7 +54,18 @@
     background-color: #EC167F;
     color: white;
     font-weight: 600;
+    text-decoration: none;
 }
+.main-btn-link{
+    color: white; 
+    text-decoration: none;
+}
+
+.main-btn-link:hover{
+    color: #EC167F; 
+ 
+}
+
 .main-btn:hover{
     background-color: white;
     color: #EC167F;

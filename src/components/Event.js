@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Eventcard  from './events/eventpages/Eventcard'
+
 const Event = () => {
 
   const [eventdata,seteventdata] =useState([])
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  
 
   console.log("eventdata",eventdata)
   useEffect(()=>{
@@ -29,8 +32,8 @@ const Event = () => {
 
   return (
     <div className=''>
-    
-      <div className='container'><Eventcard eve={event}/></div>
+     
+      <div className='container'><Eventcard /></div>
       
     </div>
   )

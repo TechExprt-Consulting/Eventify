@@ -119,7 +119,7 @@ const Reference = styled.div`
   
   return (
     <div className='container'>
-        <div className='sectionTitle mt-5'>
+        <div className='sectionTitle '>
             <span>Recommended Movies</span>
         </div>
       

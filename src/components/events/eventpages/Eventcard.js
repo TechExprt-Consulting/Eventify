@@ -1,118 +1,39 @@
 import React from 'react'
 import "./Eventcard.css"
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 import img2 from "../../../images/salar.jpeg"
 import img3 from "../../../images/sambhadur.jpeg"
 import aqua from "../../../images/aqua.jpeg"
-const Eventcard = ({data,eve}) => {
+const Eventcard = () => {
   return (
-    <div className='mt-4'>
-        
-        <div className='d-flex justify-content-center'>
-            <button className='btn btn filterbutton m-2'>Hindi</button>
-            <button className='btn btn filterbutton m-2'>English</button>
-            <button className='btn btn filterbutton m-2'>Malyalam</button>
-            <button className='btn btn filterbutton m-2'>Telgu</button>
-            <button className='btn btn filterbutton m-2'>Tamil</button>
-        </div>
-        
-       <div className='card-section row justify-content-center mt-3 '>
+    <div className='d-flex justify-content-center'>
+    <div className='mt-2  d-flex flex-wrap justify-content-start'>
 
-           <div className="card my-2" >
-                <img src={aqua} className="card-img-top" alt="..."/>
-                <div className="card-body">
-                    <h6>{data.name}</h6>
-                    <p className="card-text">{data.certificate}</p>
-                    <p className="card-text">{data.languages}</p>
-                </div>
-            </div>
+        {[...Array(12).keys()].map((index) => (
+            <Card key={index} sx={{ maxWidth: 190, flex: '1 0 calc(20% - 8px)', marginBottom: 8, marginRight: 3 }}>
+            <CardMedia
+                sx={{ height: 300, width: '100%', objectFit: 'cover' }}
+                image={img3}
+                title="green iguana"
+            />
+            <CardContent>
+                <Typography  variant="h6" component="div">
+                Lizard
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                salar
+                </Typography>
+            </CardContent>
+            </Card>
+        ))}
 
-            <div className="card my-2" >
-                <img src={img2} 
-                className="card-img-top" alt="..."/>
-                <div className="card-body">
-                    <h6>Avenger</h6>
-                    <p className="card-text">UA</p>
-                    <p className="card-text">Hindi,English</p>
-                </div>
-            </div>
-
-
-            <div className="card my-2" >
-                <img src={img3} 
-                className="card-img-top" alt="..."/>
-                <div className="card-body">
-                    <h6>GOG</h6>
-                    <p className="card-text">UA</p>
-                    <p className="card-text">Hindi,English</p>
-                </div>
-            </div>
-
-
-            <div className="card my-2" >
-                <img src={aqua} className="card-img-top" alt="..."/>
-                <div className="card-body">
-                    <h6>Animal</h6>
-                    <p className="card-text">A</p>
-                    <p className="card-text">Hindi</p>
-                </div>
-            </div>
-
-            <div className="card my-2" >
-                <img src={img2} 
-                className="card-img-top" alt="..."/>
-                <div className="card-body">
-                    <h6>Avenger</h6>
-                    <p className="card-text">UA</p>
-                    <p className="card-text">Hindi,English</p>
-                </div>
-            </div>
-
-
-            <div className="card my-2" >
-                <img src={img3} 
-                className="card-img-top" alt="..."/>
-                <div className="card-body">
-                    <h6>GOG</h6>
-                    <p className="card-text">UA</p>
-                    <p className="card-text">Hindi,English</p>
-                </div>
-            </div>
-            
-            <div className="card my-2" >
-                <img src={aqua} className="card-img-top" alt="..."/>
-                <div className="card-body">
-                    <h6>Animal</h6>
-                    <p className="card-text">A</p>
-                    <p className="card-text">Hindi</p>
-                </div>
-            </div>
-
-            <div className="card my-2" >
-                <img src={img2} 
-                className="card-img-top" alt="..."/>
-                <div className="card-body">
-                    <h6>Avenger</h6>
-                    <p className="card-text">UA</p>
-                    <p className="card-text">Hindi,English</p>
-                </div>
-            </div>
-
-
-            <div className="card my-2" >
-                <img src={img3} 
-                className="card-img-top" alt="..."/>
-                <div className="card-body">
-                    <h6>GOG</h6>
-                    <p className="card-text">UA</p>
-                    <p className="card-text">Hindi,English</p>
-                </div>
-            </div>
-        </div>
-
-
-
-            
-    </div>
+     </div>
+     </div>
   )
 }
 

@@ -10,11 +10,11 @@ const Movie = () => {
   }
   
   return (
-    <div >
+    <div className='mt-1' >
        
         <EventCarousel/>
         <div className='container'>
-        <Eventcard data={movie}/>
+        <Eventcard />
         </div>
         
     </div>

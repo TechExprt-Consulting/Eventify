@@ -2,18 +2,21 @@
     background-image: url('../../images/banner-img.png');
     background-size: cover;
     background-position: center;
-    height: 50vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
+    bottom: 10vh;
   }
 
 .banner-content{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 3vh;
 
 }  
 

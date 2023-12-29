@@ -12,16 +12,16 @@ const Header = () => {
   return (
     
     
-        <div>
-        <nav className="navbar navbar-expand-lg navbar-main ">
+        <div className='header-name'>
+        <nav className="navbar navbar-expand-lg navbar-main bg-transperent">
           <div className="container-fluid ">
-            <span className="navbar-brand" href="#"><img src='Eventify-logo.png'></img></span>
+            <span className="navbar-brand offset-1" href="#"><img src='Eventify-logo.png'></img></span>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse offset-4 " id="navbarSupportedContent">
+            <div className="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
               <ul className="navbar-nav ">
-                <li className="nav-item mx-4 mt-1 pt-1">
+                <li className="nav-item mx-3 mt-1 pt-1">
                   <span className='list-name'><Link to="/" className={activeLink === 0 ? 'custom-linkactive' : 'custom-link'} onClick={() => handleLinkClick(0)}>Home</Link></span>
                 </li>
                 <li className="nav-item mx-3 mt-1 pt-1">
@@ -32,15 +32,13 @@ const Header = () => {
                   <span className='list-name' ><Link to="/Event" className={activeLink === 2 ? 'custom-linkactive' : 'custom-link'} onClick={() => handleLinkClick(2)}>Events</Link></span>
                 </li>
 
+
                 <li className="nav-item mx-3 mt-1 pt-1 ">
-                  <span className='list-name'>Activity</span>
-                </li>
-                <li className="nav-item mx-3 mt-1 pt-1 ">
-                  <span className='list-name'><Link to="/ListYourShow" className={activeLink === 4 ? 'custom-linkactive' : 'custom-link'} onClick={() => handleLinkClick(4)}>List your Show</Link></span>
+                  <span className='list-name'><Link to="/ListYourShow" className={activeLink === 3 ? 'custom-linkactive' : 'custom-link'} onClick={() => handleLinkClick(3)}>List your Show</Link></span>
                 </li>
                 <li className="nav-item mx-3 ">
               
-                <button className="btn btn main-btn" >LogIn</button>
+                <button className="btn btn main-btn" ><Link to="/login" className='main-btn-link' onClick={() => handleLinkClick(4)}>LogIn</Link></button>
                 </li>
               </ul>
               
