@@ -12,11 +12,11 @@ import aqua from "../../../images/aqua.jpeg"
 const Eventcard = () => {
   return (
     <div className=''>
-      <div><h5>Movies in indore</h5></div>  
-    <div className='mt-2  d-flex flex-wrap justify-content-center'>
+      <div className='m-5'><p  className='m-5'>Movies in indore</p></div>  
+    <div className='mt-2  d-flex flex-wrap justify-content-start'>
         
         {[...Array(14).keys()].map((index) => (
-            <Card key={index} sx={{ width:275, marginBottom: 8, marginRight: 3 }}>
+            <Card key={index} sx={{ width:285, marginBottom: 8, marginRight: 3 }}>
             <CardMedia
                 sx={{ height: 310, objectFit: 'cover' }}
                 image={img3}
@@ -24,10 +24,13 @@ const Eventcard = () => {
             />
             <CardContent>
                 <Typography  variant="h6" component="div">
-                Lizard
+                Salaar Part 1-CeaseFire
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                salar
+                hindi,English
+                </Typography>
+                <Typography  style={{ borderTop: '1px solid grey', textAlign: 'center',marginTop:"1vh",paddingTop:"2vh" }}>
+                        <span  style={{margin:"auto",color:"#EC167F",fontSize:"1.4vw",fontWeight:"600",textTransform:"capitalize"}}>Book Ticket</span>
                 </Typography>
             </CardContent>
             </Card>
