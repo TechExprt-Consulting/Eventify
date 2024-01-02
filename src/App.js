@@ -11,6 +11,7 @@ import BannerSection from './components/movies/bannerSection/BannerSection';
 import MainBannerSearch from './components/main-banner-search/MainBannerSearch';
 import EventCarousel from './components/events/eventpages/EventCarousel';
 import Eventcard from './components/events/eventpages/Eventcard';
+import Footer2 from './components/footer/Footer2';
 import Home from './components/Home';
 import Movie from './components/Movie';
 import Event from './components/Event';
@@ -36,6 +37,7 @@ function App() {
           <Route path="/navbar"  element={<Navbar/>} /> 
           <Route path="/movieseat"  element={<Movieseat/>} />
           <Route path="/footer"  element={<Footer/>} />
+          <Route path="/footer-new"  element={<Footer2/>} />
         </Routes>
         
      

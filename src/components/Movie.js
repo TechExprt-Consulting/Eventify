@@ -38,11 +38,12 @@ const Movie = () => {
     < >
    <div style={{ overflow: 'hidden',marginTop:"1vh" }}>
       
-   <Grid container spacing={2}>
+  <Grid container spacing={2} >
   <Grid item xs={12} sm={12} md={12} lg={12}>
     <EventCarousel />
   </Grid>
 
+  <Grid container spacing={2} md={12} >
   <Grid item xs={3} sm={3} md={3} lg={3} >
     <Grid item xs={12} sm={12} md={12} lg={12} style={{margin:"1vw",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',padding:"1vw",borderRadius:"1vw"}}>
       <div
@@ -100,6 +101,7 @@ const Movie = () => {
   <Grid item xs={9} sm={9} md={9} lg={9}  >
     
     <Grid item xs={12} sm={ 12} md={12} lg={12}style={{margin:"1vw",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',padding:"1vw",borderRadius:"1vw"}}><Eventcard /></Grid>
+  </Grid>
   </Grid>
 </Grid>
     </div>
