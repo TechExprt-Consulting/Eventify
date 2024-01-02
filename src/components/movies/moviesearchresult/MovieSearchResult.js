@@ -24,15 +24,7 @@ const MovieSearchResult = () => {
         </div>
         <div className='col-md-8 theatertime'>
 
-                <div class="card " id="time-info" >
-
-                    <div class="card-body">
-                       
-                        <h6 class="card-text" style={{color:"green"}}>4:45PM</h6>
-                        <p class="card-title">2D</p>
-                        <p className='seat-type'>RECLINER</p>
-                    </div>
-                </div>
+               
 
 
 

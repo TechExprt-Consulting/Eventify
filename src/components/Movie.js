@@ -14,13 +14,9 @@ import FormLabel from '@mui/material/FormLabel';
 
 
 const Movie = () => {
-  const movie=  {
-    "name": "The Shawshank Redemption",
-    "certificate": "R",
-    "languages": "English,hindi"
-  }
+ 
 
-  const [value, setValue] = React.useState('female');
+  const [value, setValue] = React.useState('All');
 
   const handleChangeradio = (event) => {
     setValue(event.target.value);
@@ -58,8 +54,8 @@ const Movie = () => {
         style={{ fontSize: '19px', color: 'black', cursor: 'pointer', fontWeight: '500' }}
         onClick={toggleAttributes}
       >
-        <h4 className=''>Language</h4>
-        <h4>{isAttributesVisible === false ? <KeyboardArrowDownSharpIcon /> : <KeyboardArrowUpSharpIcon/>}</h4>
+        <h4 className='' style={{fontSize:"1.5vw"}}>Language</h4>
+        <h4 style={{fontSize:"1.5vw"}}>{isAttributesVisible === false ? <KeyboardArrowDownSharpIcon /> : <KeyboardArrowUpSharpIcon/>}</h4>
       </div>
 
       <div className={`collapse ${isAttributesVisible ? 'show' : ''}`} id="cuppingAttributesCollapse">
@@ -86,7 +82,7 @@ const Movie = () => {
         style={{ fontSize: '19px', color: 'black', cursor: 'pointer', fontWeight: '500' }}
         onClick={toggleAttributessecond}
       >
-        <h4 className=''>Genres</h4>
+        <h4 style={{fontSize:"1.5vw"}} className=''>Genres</h4>
         <h4>{isAttributesVisiblesecond === false ? <KeyboardArrowDownSharpIcon /> : <KeyboardArrowUpSharpIcon/>}</h4>
       </div>
 

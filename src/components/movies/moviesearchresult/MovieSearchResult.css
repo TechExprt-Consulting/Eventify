@@ -1,6 +1,6 @@
 .main-seat-div{
     display: flex;
-    border: 1px solid grey;
+    
     padding: 1vw;
     margin: 1vw;
     border-radius: 1vw;
@@ -9,7 +9,7 @@
 .theaterinfo{
      
     color: black;
-    text-align: center;
+    
     margin-top: 2vh;
   
   
@@ -26,7 +26,7 @@
 
 .online-info{
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
 
 .theatertime{
@@ -46,8 +46,9 @@
 #time-info{
     width: 10vw;
     border: 1px solid rgb(153,153,153);
-    height: 16vh;
+    height: 12vh;
     text-align: center;
+    padding: 0;
 }
 .seat-type{
     font-size: .8vw;

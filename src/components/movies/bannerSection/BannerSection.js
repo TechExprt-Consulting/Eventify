@@ -60,7 +60,7 @@ const Card = styled.div`
   border:3px solid #E0E0E0;
   width: 100%;
   text-align: center;
-  height: 14vh;
+  height: 12vh;
   border-radius:10px;
 
   display:flex;
@@ -115,33 +115,21 @@ const Reference = styled.div`
     <div>
         <div className=''>
             <div className='movie-Banner'>
+ 
+
+            </div>
+
+            <div className='row'>
+              <div className='col-md-6'>
                  <div className='banner-movie-info'>
                   <div className='star-sign'><StarOutlinedIcon style={{color:"#FAAC1D"}}/><StarOutlinedIcon style={{color:"#FAAC1D"}}/><StarOutlinedIcon style={{color:"#FAAC1D"}}/><StarOutlinedIcon style={{color:"#FAAC1D"}}/><StarOutlinedIcon style={{color:"#FAAC1D"}}/></div>
-                  <h2 style={{color:"white"}}>Animal</h2>
-                  <p style={{color:"white"}}>A  3h 21m Action,Thriller</p>
-                  <p className=' ' style={{color:"white"}}>Directed by: sam | Written by : Michael Waldron | Produced by :Kevin</p>
+                  <h2 className='mt-3'>Animal</h2>
+                  <p >Release on 1 Dec 2023</p>
+                  <p >A  3h 21m Action,Thriller</p>
+                  <p className=' ' >Directed by: sam | Written by : Michael Waldron | Produced by :Kevin</p>
                  </div>
-
-            </div>
-
-            <div className='mt-5'>
-              
-                <div className='col-md-12 about-section'>
-                    <div className='movie-all-info'>
-                        <h4 className='title-movie-banner'>About Movie</h4>
-                        <p className='title-content'>Animal showcases a violent world set against the backdrop of a troubled relationship between Ranbir's character Ranvijay Singh and his father Balbir Singh, played by Anil Kapoor.A father, who is often away due to work, is unable to comprehend the intensity of his son's love. Ironically, this fervent love and admiration for his father and family creates conflict between the father and son.</p>
-                    </div>
-                    <div className='movie-all-info'>
-                     <h4 className='title-movie-banner'>Cast</h4>   
-                    <Castcard/>
-                    </div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <SearchBar/>
-        <div className='date-calander mt-3'>
-        <CarouselContainer>
+                 <div className='datediv'>
+                 <CarouselContainer>
                         <Carousel cols={5} showDots loop>
                             
                         
@@ -238,6 +226,33 @@ const Reference = styled.div`
 
                         </Carousel>
                     </CarouselContainer>
+
+                 </div>
+              </div>
+
+
+              
+
+              <div className='col-md-6 about-section'>
+                    <div className='movie-all-info'>
+                        <h4 className='title-movie-banner'>About Movie</h4>
+                        <p className='title-content'>Animal showcases a violent world set against the backdrop of a troubled relationship between Ranbir's character Ranvijay Singh and his father Balbir Singh, played by Anil Kapoor.A father, who is often away due to work, is unable to comprehend the intensity of his son's love. Ironically, this fervent love and admiration for his father and family creates conflict between the father and son.</p>
+                    </div>
+                    <div className='movie-all-info'>
+                     <h4 className='title-movie-banner'>Cast</h4>   
+                    <Castcard/>
+                    </div>
+                    <div></div>
+                </div>
+
+            
+            </div>
+
+
+        </div>
+        <SearchBar/>
+        <div className='date-calander mt-3'>
+
         </div>
         <MovieSearchResult/>
     </div>

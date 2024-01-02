@@ -13,7 +13,8 @@
 }
 .banner-movie-info{
    
-    line-height: 1.5vh;
+    /* line-height: 1.5vh; */
+    margin-top: 4vh;
     padding-left: 2vw;
 
 }
@@ -28,7 +29,7 @@
 }
 
 .movie-all-info{
-    width: 70vw;
+    width: 45vw;
 }
 
 .sub-date-heading{
