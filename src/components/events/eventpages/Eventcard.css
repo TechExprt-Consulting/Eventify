@@ -1,68 +1,7 @@
-.filterbutton{
+.card-movies{
 
-    color:#EC167F;
-    border-color: rgb(220,220,220);
-    font-size: 1vw;
-    border-radius: 1.5vw;
-}
-
-.filterbutton:hover{
-    background-color: #EC167F;
-    color: white;
-}
-.card{
-    width:16vw ;
-    height:65vh ;
-    margin: 0.5vw ;
-    
-   
-    border: none;
-    
-}
-
-.card img{
-    height:59vh ;
-    border-radius: .5vw;
-}
-
-.card-section{
-    flex: 1;
-}
-.card-text{
-    padding: 0;
-}
-@media  (max-width: 576px) {
-    .card-section{
-     
-      display: flex;
-      flex-direction: column;
-      margin: 0;
-    
-       
+    transition: 'transform 0.3s',
+    '&:hover' :{
+      transform: 'scale(1.05)',
     }
-
-    .filterbutton{
-
-        color:#EC167F;
-        border-color: rgb(220,220,220);
-        font-size: 1.5vh;
-        border-radius: 1.5vw;
-    }
-    
-    .card{
-        width:100vw;
-        margin: 1vh;
-        padding: 0%;
-        box-shadow:  -1px 4px 21px 0px rgba(0,0,0,0.75);;
-    }
-    
-    .card img{
-        width:auto;
-        margin:0;
-    } 
-
-    .card div{
-        width:100vw;
-    }
-    
-  }
+}

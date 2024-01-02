@@ -12,11 +12,11 @@ import aqua from "../../../images/aqua.jpeg"
 const Eventcard = () => {
   return (
     <div className=''>
-    <div className='mt-3 mb-2'><p style={{fontSize:"1.8vw",fontWeight:"600"}}>Movies in indore</p></div>  
-    <div className='mt-2  d-flex flex-wrap justify-content-evenly'>
+    <div className='mt-3 mb-2'><p style={{fontSize:"1.6vw",fontWeight:"600",marginLeft:"1vw"}}>Movies in indore</p></div>  
+    <div className='mt-2  d-flex flex-wrap justify-content-start'>
         
         {[...Array(14).keys()].map((index) => (
-            <Card key={index} sx={{ width:285, marginBottom: 8, marginRight: 3 }}>
+            <Card key={index} sx={{ width:220, marginBottom: 8, marginRight: 2,marginLeft:2, transition: 'transform 0.3s','&:hover': { transform: 'scale(1.05)', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',cursor:"pointer"} }} className='card-movies'>
             <CardMedia
                 sx={{ height: 310, objectFit: 'cover' }}
                 image={img3}
@@ -29,9 +29,7 @@ const Eventcard = () => {
                 <Typography variant="body2" color="text.secondary">
                 hindi,English
                 </Typography>
-                <Typography  style={{ borderTop: '1px solid grey', textAlign: 'center',marginTop:"1vh",paddingTop:"2vh" }}>
-                        <span  style={{margin:"auto",color:"#EC167F",fontSize:"1.3vw",fontWeight:"550",textTransform:"capitalize"}}>Book Ticket</span>
-                </Typography>
+            
             </CardContent>
             </Card>
         ))}
