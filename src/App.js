@@ -21,6 +21,10 @@ import ListYourShow from './components/listyourshow/ListYourShow';
 import Navbar from './components/navbar/Navbar';
 import Movieseat from './components/movieseat/Movieseat';
 import Footer from './components/footer/Footer';
+import LandingpageCarousel from './components/landingPagecarousel/LandingpageCarousel';
+import LandingpageCardCarousel from './components/landingPagecarousel/LandingpageCardCarousel';
+import LandingpageEventCarousel from './components/landingPagecarousel/LandingpageEventCarousel';
+import EventpageCarousel from './components/events/eventpages/EventpageCarousel';
 function App() {
   return (
     <div className="App">
@@ -38,6 +42,10 @@ function App() {
           <Route path="/movieseat"  element={<Movieseat/>} />
           <Route path="/footer"  element={<Footer/>} />
           <Route path="/footer-new"  element={<Footer2/>} />
+          <Route path="/landingpageCarousel"  element={<LandingpageCarousel/>} />
+          <Route path="/landingpageCardCarousel"  element={<LandingpageCardCarousel/>} />
+          <Route path="/landingpageEventCarousel"  element={<LandingpageEventCarousel/>} />
+          <Route path="/eventpageCarousel"  element={<EventpageCarousel/>} />
         </Routes>
         
      

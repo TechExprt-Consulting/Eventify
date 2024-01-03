@@ -6,19 +6,25 @@ import MiddleBanner from './middleBanner/MiddleBanner'
 import TimeCounter from './timeCounter/TimeCounter'
 import Header from './header/Header'
 import Featuresection from './featuresection/Featuresection'
-import Footer from './footer/Footer'
+import Footer2 from './footer/Footer2'
+import LandingpageCarousel from './landingPagecarousel/LandingpageCarousel'
+import LandingpageCardCarousel from './landingPagecarousel/LandingpageCardCarousel'
+import LandingpageEventCarousel from './landingPagecarousel/LandingpageEventCarousel'
+
 
 const Home = () => {
   return (
     <div>
-      
-      <MainBannerSearch/>
-      <Cardsectionfirst/>
-      <Cardsectionsecond/>
+      <LandingpageCarousel/>
+      {/* <MainBannerSearch/> */}
+      <LandingpageCardCarousel/>
+      <LandingpageEventCarousel/>
+      {/* <Cardsectionfirst/> */}
+      {/* <Cardsectionsecond/> */}
       {/* <MiddleBanner/> */}
       {/* <Featuresection/> */}
       <TimeCounter/>
-      <Footer/>
+      <Footer2/>
     </div>
   )
 }
