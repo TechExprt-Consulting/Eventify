@@ -19,7 +19,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import SearchBar from "material-ui-search-bar";
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import Footer2 from './footer/Footer2';
-
+import EventpageCarousel from './events/eventpages/EventpageCarousel';
 const Movie = () => {
  
 
@@ -65,7 +65,7 @@ const Movie = () => {
       
   <Grid container spacing={2} >
   <Grid item xs={12} sm={12} md={12} lg={12}>
-    <EventCarousel />
+    <EventpageCarousel/>
   </Grid>
 
   <Grid container spacing={2} style={{padding:"0 10.5vw" , backgroundColor:"#f4f4f4",marginTop:"4vh"}}>

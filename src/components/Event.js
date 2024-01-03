@@ -10,7 +10,8 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import EventCarousel from './events/eventpages/EventCarousel'
-
+import Box from '@mui/material/Box';
+import EventpageCarousel from './events/eventpages/EventpageCarousel';
 
 const Event = () => {
 
@@ -61,9 +62,10 @@ const Event = () => {
      
           <Grid container spacing={2}>
             <Grid item xs={12} sm={12} md={12} lg={12}>
-              <EventCarousel />
+              <EventpageCarousel/>
             </Grid>
-
+          <div className="d-flex justify-content-center">  
+          <Box  width={{ lg: "80%" }} className="d-flex " >
             <Grid item xs={3} sm={3} md={3} lg={3} >
               <Grid item xs={12} sm={12} md={12} lg={12} style={{margin:"1vw",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',padding:"1vw",borderRadius:"1vw"}}>
                 <div
@@ -122,6 +124,8 @@ const Event = () => {
               
               <Grid item xs={12} sm={ 12} md={12} lg={12}style={{margin:"1vw",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',padding:"1vw",borderRadius:"1vw"}}><Eventcard /></Grid>
             </Grid>
+            </Box>
+           </div>  
           </Grid>
       
     </div>

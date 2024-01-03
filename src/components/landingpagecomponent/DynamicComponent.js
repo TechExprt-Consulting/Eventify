@@ -2,7 +2,7 @@ import React from 'react'
 import './DynamicComponent.css'
 const DynamicComponent = () => {
   return (
-    <div className='d-flex flex-wrap justify-content-evenly'>
+    <div className='d-flex flex-wrap justify-content-evenly dynamic-main-div'>
       <div className='text-center dynamic-div '>
         <img style={{width:"3.3vw",height:"6.5vh"}} src="ic-check 1.png"/>
         <h6 className='mt-2 dynamictitle'>CHOOSE EVENTS AND TICKETS</h6>

@@ -18,12 +18,13 @@ const Eventcard = () => {
         {[...Array(14).keys()].map((index) => (
             <Card key={index} sx={{ width:220, marginBottom: 8, marginRight: 2,marginLeft:2, transition: 'transform 0.3s','&:hover': { transform: 'scale(1.05)', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',cursor:"pointer"} }} className='card-movies'>
             <CardMedia
-                sx={{ height: 310, objectFit: 'cover' }}
+                sx={{ height: 250, objectFit: 'cover' }}
                 image={img3}
                 title="green iguana"
             />
             <CardContent>
-                <Typography  variant="h6" component="div" style={{fontSize:"1.2vw",fontWeight:"600"}}>
+                
+                <Typography  variant="h6" component="div" style={{fontSize:"1.1vw",fontWeight:"600"}}>
                 Salaar Part 1-CeaseFire
                 </Typography>
                 <Typography variant="body2" color="text.secondary">

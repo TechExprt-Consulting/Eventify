@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
 const EventpageCarousel = () => {
+  const percent = 0.3;
+  const section = useRef(null);
+  const [padding, setPadding] = useState(120);
+ 
+  const syncState = () => {
+      const { current } = section;
+      if (current) {
+          setPadding(current.offsetWidth * percent);
+      }
+  };
+ 
+  useEffect(syncState, []);
+
     const responsive = {
         0: { items: 1 },
         568: { items: 1 },
@@ -28,8 +41,8 @@ const EventpageCarousel = () => {
           infinite
         
         items={items}
-        paddingLeft={50}
-        paddingRight={50}
+        paddingLeft={padding}
+        paddingRight={padding}
         responsive={responsive}
     />
     </div>

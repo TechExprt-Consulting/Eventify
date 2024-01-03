@@ -1,10 +1,12 @@
 .mainlistyourshow{
     display: flex;
+    position: relative;
+    bottom: 10vh;
 }
 
 .ListInfo{
     width: 50vw;
-    height: 100vh;
+    height: 90vh;
 
      padding: 5vw;
     justify-content: center;

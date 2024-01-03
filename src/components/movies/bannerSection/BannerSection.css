@@ -6,6 +6,8 @@
     display: flex;
     justify-content: left;
     align-items: end;
+    position: relative;
+    bottom:10vh;
 }
 .about-section{
     padding: 0 2vw;
@@ -14,7 +16,7 @@
 .banner-movie-info{
    
     /* line-height: 1.5vh; */
-    margin-top: 4vh;
+   
     padding-left: 2vw;
 
 }

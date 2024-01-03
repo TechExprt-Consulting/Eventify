@@ -16,13 +16,13 @@ const LandingpageEventCarousel = () => {
   return (
     <div>
             <Grid container justifyContent="center" >
-      <Grid item xs={12} md={8} style={{backgroundColor:""}}>
+      <Grid item xs={12} md={9} style={{backgroundColor:""}}>
       <div><p style={{fontSize:"1.6vw",fontWeight:"600"}}>Events</p></div>  
       <Swiper
         onSwiper={setSwiperRef}
         slidesPerView={5}
         centeredSlides={true}
-        spaceBetween={30}
+        spaceBetween={20}
         pagination={{
           type: 'fraction',
         }}
@@ -31,84 +31,84 @@ const LandingpageEventCarousel = () => {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide style={{height:"64vh",width:"180px",borderRadius:"1vw"}}>
+        <SwiperSlide style={{height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg1}/>
             <h6 style={{padding:"0vh 1vh",fontSize:"1.4vw",fontWeight:"600",lineHeight:"1.5"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh",}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
-        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"180px",borderRadius:"1vw"}}>
+        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg3}/>
             <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
-        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"180px",borderRadius:"1vw"}}>
+        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg2}/>
             <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
-        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"180px",borderRadius:"1vw"}}>
+        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg1}/>
             <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
-        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"180px",borderRadius:"1vw"}}>
+        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg3}/>
             <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
-        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"180px",borderRadius:"1vw"}}>
+        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg2}/>
             <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
-        <SwiperSlide style={{height:"64vh",width:"180px",borderRadius:"1vw"}}>
+        <SwiperSlide style={{height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg1}/>
             <h6 style={{padding:"0.2vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
-        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"180px",borderRadius:"1vw"}}>
+        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg3}/>
             <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
-        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"180px",borderRadius:"1vw"}}>
+        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg2}/>
             <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
-        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"180px",borderRadius:"1vw"}}>
+        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg1}/>
             <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
-        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"180px",borderRadius:"1vw"}}>
+        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg3}/>
             <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
-        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"180px",borderRadius:"1vw"}}>
+        <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg2}/>
             <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>

@@ -4,7 +4,7 @@ import { BrowserRouter as Router,Routes,Route, Link } from 'react-router-dom';
 import Header from './components/header/Header';
 import Cardsectionfirst from './components/cardsectionfirst/Cardsectionfirst';
 import Cardsectionsecond from './components/cardsectionsecond/Cardsectionsecond';
-import MiddleBanner from './components/middleBanner/MiddleBanner';
+
 import Featuresection from './components/featuresection/Featuresection';
 import TimeCounter from './components/timeCounter/TimeCounter';
 import BannerSection from './components/movies/bannerSection/BannerSection';
@@ -18,7 +18,8 @@ import Event from './components/Event';
 import Login from './components/login/Login';
 import Signup from './components/signup/Signup';
 import ListYourShow from './components/listyourshow/ListYourShow';
-import Navbar from './components/navbar/Navbar';
+import EventBannerPage from './components/events/eventpages/EventBannerPage';
+
 import Movieseat from './components/movieseat/Movieseat';
 import Footer from './components/footer/Footer';
 import LandingpageCarousel from './components/landingPagecarousel/LandingpageCarousel';
@@ -29,6 +30,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+      
         <Header/>
         <Routes>
           <Route path="/"  element={<Home/>} />
@@ -38,7 +40,7 @@ function App() {
           <Route path="/login"  element={<Login/>} />
           <Route path="/Signup"  element={<Signup/>} />
           <Route path="/ListYourShow"  element={<ListYourShow/>} />
-          <Route path="/navbar"  element={<Navbar/>} /> 
+        
           <Route path="/movieseat"  element={<Movieseat/>} />
           <Route path="/footer"  element={<Footer/>} />
           <Route path="/footer-new"  element={<Footer2/>} />
@@ -46,6 +48,7 @@ function App() {
           <Route path="/landingpageCardCarousel"  element={<LandingpageCardCarousel/>} />
           <Route path="/landingpageEventCarousel"  element={<LandingpageEventCarousel/>} />
           <Route path="/eventpageCarousel"  element={<EventpageCarousel/>} />
+          <Route path="/eventBannerPage"  element={<EventBannerPage/>} />
         </Routes>
         
      
