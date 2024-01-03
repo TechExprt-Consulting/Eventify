@@ -10,12 +10,14 @@ import Footer2 from './footer/Footer2'
 import LandingpageCarousel from './landingPagecarousel/LandingpageCarousel'
 import LandingpageCardCarousel from './landingPagecarousel/LandingpageCardCarousel'
 import LandingpageEventCarousel from './landingPagecarousel/LandingpageEventCarousel'
+import DynamicComponent from './landingpagecomponent/DynamicComponent'
 
 
 const Home = () => {
   return (
     <div>
       <LandingpageCarousel/>
+      <DynamicComponent/>
       {/* <MainBannerSearch/> */}
       <LandingpageCardCarousel/>
       <LandingpageEventCarousel/>

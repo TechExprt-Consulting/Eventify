@@ -26,9 +26,9 @@ const LandingpageCarousel = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><img style={{height:"80vh",width:"100vw"}} src={img1}/></SwiperSlide>
-        <SwiperSlide><img style={{height:"80vh",width:"100vw"}} src={img2}/></SwiperSlide>
-        <SwiperSlide><img style={{height:"80vh",width:"100vw"}} src={img3}/></SwiperSlide>
+        <SwiperSlide><img style={{height:"70vh",width:"100vw"}} src={img1}/></SwiperSlide>
+        <SwiperSlide><img style={{height:"70vh",width:"100vw"}} src={img2}/></SwiperSlide>
+        <SwiperSlide><img style={{height:"70vh",width:"100vw"}} src={img3}/></SwiperSlide>
      
       </Swiper>
     </div>

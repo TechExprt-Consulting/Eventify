@@ -1,0 +1,11 @@
+.dynamictitle{
+    font-size: 1.2vw;
+}
+.dynamic-div{
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.dynamic-div:hover{
+    transform: scale(1.1);
+}

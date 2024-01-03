@@ -4,14 +4,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import EventSeatRoundedIcon from '@mui/icons-material/EventSeatRounded';
 const TimeCounter = () => {
 
-  const styles = {
-    fontSize: '16px',
-    color: 'white',
-    // Media query for screens smaller than 600 pixels wide
-    '@media (max-width: 600px)': {
-      fontSize: '14px',
-    },
-  };
+
   return (
     <>
       <div className='Info-div '>
