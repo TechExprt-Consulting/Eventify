@@ -34,84 +34,84 @@ const LandingpageEventCarousel = () => {
         <SwiperSlide style={{height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg1}/>
-            <h6 style={{padding:"0vh 1vh",fontSize:"1.4vw",fontWeight:"600",lineHeight:"1.5"}}>Avengers</h6>
+            <h6 style={{padding:"0vh 1vh",fontSize:"1.1vw",fontWeight:"600",lineHeight:"1.5"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh",}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
         <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg3}/>
-            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
+            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.1vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
         <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg2}/>
-            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
+            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.1vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
         <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg1}/>
-            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
+            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.1vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
         <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg3}/>
-            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
+            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.1vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
         <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg2}/>
-            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
+            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.1vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
         <SwiperSlide style={{height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg1}/>
-            <h6 style={{padding:"0.2vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
+            <h6 style={{padding:"0.2vh 1vh",fontSize:"1.1vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
         <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg3}/>
-            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
+            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.1vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
         <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg2}/>
-            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
+            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.1vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
         <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg1}/>
-            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
+            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.1vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
         <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg3}/>
-            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
+            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.1vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>
         <SwiperSlide style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
             <div>
             <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg2}/>
-            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.4vw",fontWeight:"600"}}>Avengers</h6>
+            <h6 style={{padding:"0.5vh 1vh",fontSize:"1.1vw",fontWeight:"600"}}>Avengers</h6>
             <p style={{padding:"0vh 1vh"}}>Action/Sci-fi</p>
             </div>
         </SwiperSlide>

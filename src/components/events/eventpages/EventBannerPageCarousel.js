@@ -1,31 +1,27 @@
 import React, { useRef, useState } from 'react';
 import Grid from '@mui/material/Grid';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import cardimg1 from '../../images/aqua.jpeg'
-import cardimg2 from '../../images/sambhadur.jpeg'
-import cardimg3 from '../../images/m23.jpeg'
+import cardimg1 from '../../../images/movie1.jpg'
+import cardimg2 from '../../../images/sambhadur.jpeg'
+import cardimg3 from '../../../images/m23.jpeg'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
-
 import { Pagination, Navigation } from 'swiper/modules';
 
-const LandingpageCardCarousel = () => {
+
+const EventBannerPageCarousel =()=>{
     const [swiperRef, setSwiperRef] = useState(null);
-  return (
- <>
-    <Grid container justifyContent="center" >
-      <Grid item xs={12} md={9} style={{backgroundColor:""}}>
-      <div><p style={{fontSize:"1.6vw",fontWeight:"600"}}>Recommended Movies</p></div>  
+    return(<>
+  <Grid container justifyContent="center" >
+      <Grid item xs={12} md={12} style={{backgroundColor:""}}>
+     
       <Swiper
         onSwiper={setSwiperRef}
-        slidesPerView={5}
+        slidesPerView={4}
         centeredSlides={true}
         spaceBetween={20}
-        pagination={{
-          type: 'fraction',
-        }}
+     
        
         loop={true} 
         navigation={true}
@@ -119,9 +115,9 @@ const LandingpageCardCarousel = () => {
       </Swiper>
       </Grid>
     </Grid>
-
- </>
-  )
+    
+    
+    </>)
 }
 
-export default LandingpageCardCarousel
+export default EventBannerPageCarousel

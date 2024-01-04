@@ -13,18 +13,18 @@ const Eventcard = () => {
   return (
     <div className=''>
     <div className='mt-3 mb-2'><p style={{fontSize:"1.6vw",fontWeight:"600",marginLeft:"1vw"}}>Movies in indore</p></div>  
-    <div className='mt-2  d-flex flex-wrap justify-content-start'>
+    <div className='mt-2  d-flex flex-wrap justify-content-center'>
         
         {[...Array(14).keys()].map((index) => (
-            <Card key={index} sx={{ width:220, marginBottom: 8, marginRight: 2,marginLeft:2, transition: 'transform 0.3s','&:hover': { transform: 'scale(1.05)', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',cursor:"pointer"} }} className='card-movies'>
+            <Card key={index} sx={{ width:310,boxShadow:" rgba(0, 0, 0, 0.01) 0px 3px 5px",marginBottom: 8, marginRight: 2,marginLeft:2, transition: 'transform 0.3s','&:hover': { transform: 'scale(1.05)', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',cursor:"pointer"} }} className='card-movies'>
             <CardMedia
-                sx={{ height: 250, objectFit: 'cover' }}
+                sx={{ height: 290, objectFit: 'cover' }}
                 image={img3}
                 title="green iguana"
             />
             <CardContent>
                 
-                <Typography  variant="h6" component="div" style={{fontSize:"1.1vw",fontWeight:"600"}}>
+                <Typography  variant="h6" component="div" style={{fontSize:".9vw",fontWeight:"550"}}>
                 Salaar Part 1-CeaseFire
                 </Typography>
                 <Typography variant="body2" color="text.secondary">

@@ -83,8 +83,8 @@ const Movie = () => {
             style={{ fontSize: '19px', color: 'black', cursor: 'pointer', fontWeight: '500',boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',padding:"0 1vw" ,}}
             onClick={toggleAttributes}
           >
-            <p className='' style={{fontSize:"1.5vw",marginRight:"1vw"}}><LocationOnOutlinedIcon/></p>
-            <p style={{fontSize:"1.5vw"}}>{isAttributesVisible === false ? <KeyboardArrowDownSharpIcon /> : <KeyboardArrowUpSharpIcon/>}</p>
+            <p className='' style={{fontSize:"1.2vw",marginRight:"1vw"}}><LocationOnOutlinedIcon/></p>
+            <p style={{fontSize:"1.2vw"}}>{isAttributesVisible === false ? <KeyboardArrowDownSharpIcon /> : <KeyboardArrowUpSharpIcon/>}</p>
           </div>
 
           </div>
@@ -106,8 +106,8 @@ const Movie = () => {
         style={{ fontSize: '19px', color: 'black', cursor: 'pointer', fontWeight: '500' }}
         onClick={toggleAttributes}
       >
-        <h4 className='' style={{fontSize:"1.5vw"}}>Language</h4>
-        <h4 style={{fontSize:"1.5vw"}}>{isAttributesVisible === false ? <KeyboardArrowDownSharpIcon /> : <KeyboardArrowUpSharpIcon/>}</h4>
+        <h4 className='' style={{fontSize:"1.2vw"}}>Language</h4>
+        <h4 style={{fontSize:"1.2vw"}}>{isAttributesVisible === false ? <KeyboardArrowDownSharpIcon /> : <KeyboardArrowUpSharpIcon/>}</h4>
       </div>
 
       <div className={`collapse ${isAttributesVisible ? 'show' : ''}`} id="cuppingAttributesCollapse">
@@ -119,9 +119,9 @@ const Movie = () => {
             onChange={handleChangeradio}
      
           >
-            <FormControlLabel value="All" control={<Radio />}  label=	{ <Typography style={{ fontSize: '1.1vw' ,padding:"1vh"}}>All</Typography> }    />
-            <FormControlLabel value="English" control={<Radio />} label=	{ <Typography style={{ fontSize: '1.1vw' ,padding:"1vh"}}>English</Typography> } />
-            <FormControlLabel value="Hindi" control={<Radio />} label=	{ <Typography style={{ fontSize: '1.1vw' ,padding:"1vh"}}>Hindi</Typography> }  />
+            <FormControlLabel value="All" control={<Radio />}  label=	{ <Typography style={{ fontSize:"1vw" ,padding:"1vh"}}>All</Typography> }    />
+            <FormControlLabel value="English" control={<Radio />} label=	{ <Typography style={{ fontSize:"1vw" ,padding:"1vh"}}>English</Typography> } />
+            <FormControlLabel value="Hindi" control={<Radio />} label=	{ <Typography style={{ fontSize:"1vw" ,padding:"1vh"}}>Hindi</Typography> }  />
           </RadioGroup>
         </FormControl>
       </div>
@@ -135,17 +135,17 @@ const Movie = () => {
         style={{ fontSize: '19px', color: 'black', cursor: 'pointer', fontWeight: '500' }}
         onClick={toggleAttributessecond}
       >
-        <h4 style={{fontSize:"1.5vw"}} className=''>Genres</h4>
+        <h4 style={{fontSize:"1.2vw"}} className=''>Genres</h4>
         <h4>{isAttributesVisiblesecond === false ? <KeyboardArrowDownSharpIcon /> : <KeyboardArrowUpSharpIcon/>}</h4>
       </div>
 
       <div className={`collapse ${isAttributesVisiblesecond ? 'show' : ''}`} id="cuppingAttributesCollapse">
-        <div className='d-flex align-items-center'><span> <Checkbox  /></span><Typography style={{ fontSize: '1.1vw',padding:"1vh" }}>Drama</Typography></div>
-        <div className='d-flex align-items-center'><span> <Checkbox  /></span><Typography style={{ fontSize: '1.1vw',padding:"1vh"}}>Action</Typography></div>
-        <div className='d-flex align-items-center'><span> <Checkbox  /></span><Typography style={{ fontSize: '1.1vw',padding:"1vh" }}>Thriller</Typography></div>
-        <div className='d-flex align-items-center'><span> <Checkbox  /></span><Typography style={{ fontSize: '1.1vw',padding:"1vh" }}>Fantasy</Typography></div>
-        <div className='d-flex align-items-center'><span> <Checkbox  /></span><Typography style={{ fontSize: '1.1vw',padding:"1vh" }}>Crime</Typography></div>
-        <div className='d-flex align-items-center'><span> <Checkbox  /></span><Typography style={{ fontSize: '1.1vw',padding:"1vh" }}>Biography</Typography></div>
+        <div className='d-flex align-items-center'><span> <Checkbox  /></span><Typography style={{ fontSize:"1vw",padding:"1vh" }}>Drama</Typography></div>
+        <div className='d-flex align-items-center'><span> <Checkbox  /></span><Typography style={{ fontSize:"1vw",padding:"1vh"}}>Action</Typography></div>
+        <div className='d-flex align-items-center'><span> <Checkbox  /></span><Typography style={{ fontSize:"1vw",padding:"1vh" }}>Thriller</Typography></div>
+        <div className='d-flex align-items-center'><span> <Checkbox  /></span><Typography style={{ fontSize:"1vw",padding:"1vh" }}>Fantasy</Typography></div>
+        <div className='d-flex align-items-center'><span> <Checkbox  /></span><Typography style={{ fontSize:"1vw",padding:"1vh" }}>Crime</Typography></div>
+        <div className='d-flex align-items-center'><span> <Checkbox  /></span><Typography style={{ fontSize:"1vw",padding:"1vh" }}>Biography</Typography></div>
       </div>
 
 
@@ -158,7 +158,7 @@ const Movie = () => {
         style={{ fontSize: '19px', color: 'black', cursor: 'pointer', fontWeight: '500' }}
         onClick={toggleAttributesthird}
       >
-        <h4 style={{fontSize:"1.5vw"}} className=''>Sort By</h4>
+        <h4 style={{fontSize:"1.2vw"}} className=''>Sort By</h4>
         <h4>{isAttributesVisiblethird === false ? <KeyboardArrowDownSharpIcon /> : <KeyboardArrowUpSharpIcon/>}</h4>
       </div>
 
@@ -170,9 +170,9 @@ const Movie = () => {
             value={sortvalue}
             onChange={handleChangeSort}
           >
-            <FormControlLabel value="Relevance" control={<Radio />} label={ <Typography style={{ fontSize: '1.1vw',padding:"1vh" }}>Relevance</Typography> } />
-            <FormControlLabel value="Release Date: New to Old" control={<Radio />} label={ <Typography style={{ fontSize: '1.1vw',padding:"1vh" }}>Release Date: New to Old</Typography> }  />
-            <FormControlLabel value="Release Date: Old to New" control={<Radio />} label={ <Typography style={{ fontSize: '1.1vw',padding:"1vh" }}>Release Date: Old to New</Typography> }  />
+            <FormControlLabel value="Relevance" control={<Radio />} label={ <Typography style={{ fontSize: '1vw',padding:"1vh" }}>Relevance</Typography> } />
+            <FormControlLabel value="Release Date: New to Old" control={<Radio />} label={ <Typography style={{ fontSize: '1vw',padding:"1vh" }}>Release Date: New to Old</Typography> }  />
+            <FormControlLabel value="Release Date: Old to New" control={<Radio />} label={ <Typography style={{ fontSize:"1vw",padding:"1vh" }}>Release Date: Old to New</Typography> }  />
           </RadioGroup>
         </FormControl>
       </div>
