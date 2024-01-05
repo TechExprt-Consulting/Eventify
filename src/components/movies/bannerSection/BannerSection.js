@@ -1,4 +1,9 @@
-import React from 'react'
+import React, { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+import { Pagination } from 'swiper/modules';
 import './BannerSection.css'
 import Carousel from 'react-grid-carousel'
 import styled from 'styled-components'
@@ -129,103 +134,29 @@ const Reference = styled.div`
                   <p className=' ' >Directed by: sam | Written by : Michael Waldron | Produced by :Kevin</p>
                  </div>
                  <div className='datediv'>
-                 <CarouselContainer>
-                        <Carousel cols={5} showDots loop>
-                            
-                        
-                            <Carousel.Item  >
-                                <Card>
-                      
-                                    <div>
-                                        <p className='date-day' id='days'>Monday</p>
-                                      <h6>01</h6>
-                                        <p className='date-day'>December</p>
-                                    
-                                    </div>
-                                <Mask />
-                                </Card>
-                            </Carousel.Item>
-
-                            <Carousel.Item  >
-                                <Card>
-                
-                                <div>
-                                        <p className='date-day' id='days'>Tuesday</p>
-                                      <h6>02</h6>
-                                        <p className='date-day'>December</p>
-                                    
-                                </div>
-                                <Mask />
-                                </Card>
-                            </Carousel.Item>
-
-                            <Carousel.Item  >
-                                <Card>
-                      
-                                <div>
-                                        <p className='date-day' id='days'>Wednesday</p>
-                                      <h6>03</h6>
-                                        <p className='date-day'>December</p>
-                                    
-                                </div>
-                                <Mask />
-                                </Card>
-                            </Carousel.Item>
-
-                            <Carousel.Item  >
-                                <Card>
-                      
-                                <div>
-                                        <p className='date-day' id='days'>Thursday</p>
-                                      <h6>04</h6>
-                                        <p className='date-day'>December</p>
-                                    
-                                </div>
-                                <Mask />
-                                </Card>
-                            </Carousel.Item>
-
-                            <Carousel.Item  >
-                                <Card>
-                            
-                                <div>
-                                        <p className='date-day' id='days'>Friday</p>
-                                      <h6>05</h6>
-                                        <p className='date-day'>December</p>
-                                    
-                                </div>
-                                <Mask />
-                                </Card>
-                            </Carousel.Item>
-
-                            <Carousel.Item  >
-                                <Card>
-                              
-                                <div>
-                                        <p className='date-day' id='days'>Satarday</p>
-                                      <h6>06</h6>
-                                        <p className='date-day'>December</p>
-                                    
-                                </div>
-                                <Mask />
-                                </Card>
-                            </Carousel.Item>
-
-                            <Carousel.Item  >
-                                <Card>
-                               
-                                <div>
-                                        <p className='date-day' id='days'>Sunday</p>
-                                      <h6>07</h6>
-                                        <p className='date-day'>December</p>
-                                    
-                                </div>
-                                <Mask />
-                                </Card>
-                            </Carousel.Item>
-
-                        </Carousel>
-                    </CarouselContainer>
+                        <Swiper
+                          slidesPerView={3}
+                          spaceBetween={30}
+                          pagination={{
+                            clickable: true,
+                          }}
+                          modules={[Pagination]}
+                          className="mySwiper"
+                        >
+                          <SwiperSlide>
+                            <h6>Mon</h6>
+                            <h6>01</h6>
+                            <h6>Jan</h6>
+                          </SwiperSlide>
+                          <SwiperSlide>Slide 2</SwiperSlide>
+                          <SwiperSlide>Slide 3</SwiperSlide>
+                          <SwiperSlide>Slide 4</SwiperSlide>
+                          <SwiperSlide>Slide 5</SwiperSlide>
+                          <SwiperSlide>Slide 6</SwiperSlide>
+                          <SwiperSlide>Slide 7</SwiperSlide>
+                          <SwiperSlide>Slide 8</SwiperSlide>
+                          <SwiperSlide>Slide 9</SwiperSlide>
+                        </Swiper>
 
                  </div>
               </div>
