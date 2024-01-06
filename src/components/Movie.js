@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import Header from './header/Header'
 import EventCarousel from './events/eventpages/EventCarousel'
 import Eventcard from './events/eventpages/Eventcard'
@@ -20,14 +20,83 @@ import SearchBar from "material-ui-search-bar";
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import Footer2 from './footer/Footer2';
 import EventpageCarousel from './events/eventpages/EventpageCarousel';
+import img3 from "../images/m23.jpeg"
+import img4 from "../images/aqua.jpeg"
+import img5 from "../images/sambhadur.jpeg"
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import {getreadAllMoviedata} from '../store/action/action'
 const Movie = () => {
- 
 
+  const imageses=[{
+    id:1,
+    movieimg:img3
+  },{
+    id:2,
+    movieimg:img3
+  },{
+    id:3,
+    movieimg:img3
+  }
+]
+  
+
+ 
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [value, setValue] = React.useState('All');
   const [sortvalue, setSortValue] = React.useState('Relevance')
-  const handleChangeradio = (event) => {
-    setValue(event.target.value);
+  const [moviedata,setmoviedata] =useState([])
+  const [genereData,setgenereData] =useState([])
+  const [filteredMovies, setFilteredMovies] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState('all');
+
+
+  
+  const moviesData = useSelector((state) => state.event);
+
+
+  useEffect(() => {
+    dispatch(getreadAllMoviedata());
+  }, [dispatch]);
+
+  useEffect(() => {
+    if (moviesData !== null && moviesData !== undefined) {
+        if(moviesData.readAllmovie !== null && moviesData.readAllmovie !== undefined ){
+        
+          setmoviedata(moviesData.readAllmovie)
+          setFilteredMovies(moviesData.readAllmovie)
+          setgenereData(moviesData.readAllmovie)
+    
+      
+        }
+    }
+    
+  }, [moviesData]);
+
+
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+
+    if (category === 'All') {
+      setFilteredMovies(moviedata);
+    } else {
+      const filtered = moviedata.filter((event) => event.language === category);
+      setFilteredMovies(filtered);
+    }
+
+
+
+  
+
+
+    
   };
+
+
   
   const handleChangeSort = (event) => {
     setSortValue(event.target.value);
@@ -53,10 +122,6 @@ const Movie = () => {
 
   const [searchTerm, setSearchTerm] = useState('');
 
-  const handleSearch = () => {
-    // Perform search based on the searchTerm
-    setSearchTerm(searchTerm);
-  };
 
 
   return (
@@ -68,32 +133,9 @@ const Movie = () => {
     <EventpageCarousel/>
   </Grid>
 
-  <Grid container spacing={2} style={{padding:"0 10.5vw" , backgroundColor:"#f4f4f4",marginTop:"4vh"}}>
-      <Grid item xs={12}>
-        <div className='d-flex justify-content-between'>
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-           <SearchBar style={{width:"40vw"}}/>
-          </div>
-          <div
-            className="heading d-flex  "
-            data-toggle="collapse"
-            data-target="#cuppingAttributesCollapse"
-            aria-expanded={isAttributesVisible}
-            aria-controls="cuppingAttributesCollapse"
-            style={{ fontSize: '19px', color: 'black', cursor: 'pointer', fontWeight: '500',boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',padding:"0 1vw" ,}}
-            onClick={toggleAttributes}
-          >
-            <p className='' style={{fontSize:"1.2vw",marginRight:"1vw"}}><LocationOnOutlinedIcon/></p>
-            <p style={{fontSize:"1.2vw"}}>{isAttributesVisible === false ? <KeyboardArrowDownSharpIcon /> : <KeyboardArrowUpSharpIcon/>}</p>
-          </div>
+ 
 
-          </div>
-      </Grid>
-     
-  </Grid>
-
-
-  <div className="d-flex justify-content-center">
+  <div className="d-flex justify-content-center" style={{width:"100vw"}}>
   <Box  width={{ lg: "80%" }} className="d-flex " >
   <Grid item xs={3} sm={3} md={3} lg={3}>
     <Grid item xs={12} sm={12} md={12} lg={12} style={{margin:"1vw",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',padding:"1vw",borderRadius:"1vw"}}>
@@ -115,13 +157,13 @@ const Movie = () => {
           <RadioGroup
             aria-labelledby="demo-controlled-radio-buttons-group"
             name="controlled-radio-buttons-group"
-            value={value}
-            onChange={handleChangeradio}
+            value={selectedCategory}
+            onChange={(e) => handleCategoryChange(e.target.value)}
      
           >
-            <FormControlLabel value="All" control={<Radio />}  label=	{ <Typography style={{ fontSize:"1vw" ,padding:"1vh"}}>All</Typography> }    />
-            <FormControlLabel value="English" control={<Radio />} label=	{ <Typography style={{ fontSize:"1vw" ,padding:"1vh"}}>English</Typography> } />
-            <FormControlLabel value="Hindi" control={<Radio />} label=	{ <Typography style={{ fontSize:"1vw" ,padding:"1vh"}}>Hindi</Typography> }  />
+                      <FormControlLabel value="All" control={<Radio />}  label=	{ <Typography style={{ fontSize:"1vw" ,padding:"1vh"}}>All</Typography> }   />
+                      <FormControlLabel value="english" control={<Radio />}  label=	{ <Typography style={{ fontSize:"1vw" ,padding:"1vh"}}>English</Typography> }  />
+                      <FormControlLabel value="hindi" control={<Radio />}  label=	{ <Typography style={{ fontSize:"1vw" ,padding:"1vh"}}>Hindi</Typography> }  />
           </RadioGroup>
         </FormControl>
       </div>
@@ -181,7 +223,37 @@ const Movie = () => {
 
   <Grid item xs={9} sm={9} md={9} lg={9}  >
     
-    <Grid item xs={12} sm={ 12} md={12} lg={12}style={{margin:"1vw",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',padding:"1vw",borderRadius:"1vw"}}><Eventcard /></Grid>
+    <Grid item xs={12} sm={ 12} md={12} lg={12}style={{margin:"1vw",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',padding:"1vw",borderRadius:"1vw"}}>
+                 <div className=''>
+                      <div className='mt-3 mb-2'><p style={{fontSize:"1.6vw",fontWeight:"600",marginLeft:"1vw"}}>Events in indore</p></div>  
+                              <div className='mt-2  d-flex flex-wrap justify-content-start'>
+                                  
+                                  {filteredMovies.map((m,index) => (
+                                      <Card  key={index}  sx={{ width:310,boxShadow:" rgba(0, 0, 0, 0.01) 0px 3px 5px",marginBottom: 8, marginRight: 2,marginLeft:2, transition: 'transform 0.3s','&:hover': { transform: 'scale(1.05)', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',cursor:"pointer"} }} className='card-movies'>
+                                      <CardMedia
+                                          sx={{ height: 290, objectFit: 'cover' }}
+                                       
+                                          image={img3}
+                                        
+                                          title="green iguana"
+                                          
+                                      />
+                                      <CardContent>
+                                          
+                                          <Typography  variant="h6" component="div" style={{fontSize:".9vw",fontWeight:"550"}}>
+                                          {m.title}
+                                          </Typography>
+                                          <Typography variant="body2" color="text.secondary">
+                                          {m.language}
+                                          </Typography>
+                                      
+                                      </CardContent>
+                                      </Card>
+                                  ))}
+
+                              </div>
+                      </div>
+    </Grid>
   </Grid>
   </Box>
   </div>

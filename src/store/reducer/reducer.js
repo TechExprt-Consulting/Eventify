@@ -1,6 +1,7 @@
 const initialState={
     readAllevent: [],
     readEventBannerById:[],
+    readAllmovie: [],
     loading: false,
     error: null,
 }
@@ -51,6 +52,26 @@ switch (action.type) {
       error: action.payload,
     };
 
+
+    case "FETCH_MOVIE_REQUEST":
+      return {
+        ...state,
+        loading: true,
+        error: null,
+      };
+    case "FETCH_MOVIE_SUCCESS":
+      return {
+        ...state,
+        readAllmovie: action.payload,
+        loading: false,
+        error: null,
+      };
+    case "FETCH_MOVIE_FAILURE":
+      return {
+        ...state,
+        loading: false,
+        error: action.payload,
+      };
 
   default:
         return state;  

@@ -23,9 +23,7 @@ const LandingpageCardCarousel = () => {
         slidesPerView={5}
         centeredSlides={true}
         spaceBetween={20}
-        pagination={{
-          type: 'fraction',
-        }}
+        
        
         loop={true} 
         navigation={true}

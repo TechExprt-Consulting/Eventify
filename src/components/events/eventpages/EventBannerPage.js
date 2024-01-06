@@ -6,6 +6,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import {getEventBannerById} from "../../../store/action/action"
 import moment from 'moment';
+import {Button,Dialog,DialogTitle,DialogContent,DialogActions,Typography,} from '@mui/material';
+import ButtonGroup from '@mui/material/ButtonGroup';
 
 const EventBannerPage = () => {
   const navigate = useNavigate();
@@ -13,7 +15,30 @@ const EventBannerPage = () => {
   const eventsBannerData = useSelector((state) => state.event);
   const [eventBanner,setEventBanner]=useState([])
   const [eventDate,seteventDate]=useState('')
-  console.log("eventDate",eventDate)
+  const [counter,setCounter]=useState(0)
+
+  const increment =()=>{
+    setCounter(counter+1)
+  }
+ 
+  const decrement =()=>{
+    if(counter == 0){
+      setCounter(0)
+    }else{
+    setCounter(counter-1)
+    }
+  }
+
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   useEffect(() => {
     dispatch(getEventBannerById());
   }, [dispatch]);
@@ -40,8 +65,8 @@ const EventBannerPage = () => {
       {/* Second Row */}
       <Grid item xs={12} sm={9}  container sx={{ borderRadius: '8px',marginTop:"5vh" }}>
         
-        <Box className="d-flex  " style={{width:"100%" }}>
-            <Box style={{boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',width:"100%",height:"100%" ,marginRight:".2vw"}}>
+        <Box className="d-flex " style={{width:"100%" }}>
+            <Box style={{boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',width:"100%",height:"100%" ,marginRight:"1vw"}}>
 
               <Box className="d-flex flex-wrap  align-items-center" style={{height:"218px" ,boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',borderRadius:".5vw"}}>
                 <img  style={{marginLeft:"1vw",borderRadius:"190px",height:"12.75vh",width:"6.5vw"}} src="abhisek33.jpg"/>
@@ -85,7 +110,7 @@ const EventBannerPage = () => {
           </Box>
           <Box className=" d-flex flex-column justify-content-center align-items-center" style={{marginRight:"2vw"}}>
               <h6 style={{fontSize:"1.3vw"}}>₹ {eventBanner.price}</h6>
-              <button className='btn btn' style={{backgroundColor:"#EC167F", color:"white" ,fontSize:"1.2vw",fontWeight:"600", padding:"1vh 1.5vw"}}>Book Now</button>
+              <button className='btn btn' onClick={handleClickOpen} style={{backgroundColor:"#EC167F", color:"white" ,fontSize:"1.2vw",fontWeight:"600", padding:"1vh 1.5vw"}}>Book Now</button>
           </Box>
         </Box>
       </Grid>
@@ -113,6 +138,138 @@ const EventBannerPage = () => {
       </Grid>
      
     </Grid>
+
+    {/* dialog box */}
+    <Dialog open={open} onClose={handleClose} maxWidth="lg" fullWidth>
+        <DialogTitle>Tickets</DialogTitle>
+        <DialogContent style={{ height: '60vh', overflow: 'auto' }}>
+          
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+              <div className='d-flex flex-column  ' style={{width:"100%",height:"10vh", marginBottom:"1vh",backgroundColor:"#fff",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',borderRadius:"15px",alignContent:"center"}}>
+                  <div className='d-flex justify-content-between align-itmes-center mx-5'>
+                    <div className='d-flex flex-column ' style={{paddingTop:"2vh"}}>
+                      <h6>India Tour (Silver)</h6>
+                      <h6>By Gourav Gupta</h6>
+                    </div>
+                    <div  className='d-flex flex-column ' style={{textAlign:"center",paddingTop:"1vh"}}> 
+                      <h6>₹ 500</h6>   
+                      <div >
+                          <ButtonGroup  aria-label="outlined button group" style={{backgroundColor:"white"}}>
+                            <Button   style={{ backgroundColor: '#E8E8E8', color:"black" }} onClick={increment}>+</Button>
+                            <Button  style={{ backgroundColor: '#E8E8E8', color:"black"}}>{counter}</Button>
+ 
+                            <Button  style={{ backgroundColor: '#E8E8E8', color:"black" }} onClick={decrement}>-</Button>
+                          </ButtonGroup>
+                      </div>
+
+                    </div>
+                  </div>
+              </div>
+
+
+              <div className='d-flex flex-column  ' style={{width:"100%",height:"10vh", marginBottom:"1vh",backgroundColor:"#fff",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',borderRadius:"15px",alignContent:"center"}}>
+                  <div className='d-flex justify-content-between align-itmes-center mx-5'>
+                    <div className='d-flex flex-column ' style={{paddingTop:"2vh"}}>
+                      <h6>India Tour (Silver)</h6>
+                      <h6>By Gourav Gupta</h6>
+                    </div>
+                    <div  className='d-flex flex-column ' style={{textAlign:"center",paddingTop:"1vh"}}> 
+                      <h6>₹ 500</h6>   
+                      <div >
+                          <ButtonGroup  aria-label="outlined button group" style={{backgroundColor:"white"}}>
+                            <Button   style={{ backgroundColor: '#E8E8E8', color:"black" }} onClick={increment}>+</Button>
+                            <Button  style={{ backgroundColor: '#E8E8E8', color:"black"}}>{counter}</Button>
+ 
+                            <Button  style={{ backgroundColor: '#E8E8E8', color:"black" }} onClick={decrement}>-</Button>
+                          </ButtonGroup>
+                      </div>
+
+                    </div>
+                  </div>
+              </div>
+
+              <div className='d-flex flex-column  ' style={{width:"100%",height:"10vh", marginBottom:"1vh",backgroundColor:"#fff",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',borderRadius:"15px",alignContent:"center"}}>
+                  <div className='d-flex justify-content-between align-itmes-center mx-5'>
+                    <div className='d-flex flex-column ' style={{paddingTop:"2vh"}}>
+                      <h6>India Tour (Silver)</h6>
+                      <h6>By Gourav Gupta</h6>
+                    </div>
+                    <div  className='d-flex flex-column ' style={{textAlign:"center",paddingTop:"1vh"}}> 
+                      <h6>₹ 500</h6>   
+                      <div >
+                          <ButtonGroup  aria-label="outlined button group" style={{backgroundColor:"white"}}>
+                            <Button   style={{ backgroundColor: '#E8E8E8', color:"black" }} onClick={increment}>+</Button>
+                            <Button  style={{ backgroundColor: '#E8E8E8', color:"black"}}>{counter}</Button>
+ 
+                            <Button  style={{ backgroundColor: '#E8E8E8', color:"black" }} onClick={decrement}>-</Button>
+                          </ButtonGroup>
+                      </div>
+
+                    </div>
+                  </div>
+              </div>
+
+
+              <div className='d-flex flex-column  ' style={{width:"100%",height:"10vh", marginBottom:"1vh",backgroundColor:"#fff",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',borderRadius:"15px",alignContent:"center"}}>
+                  <div className='d-flex justify-content-between align-itmes-center mx-5'>
+                    <div className='d-flex flex-column ' style={{paddingTop:"2vh"}}>
+                      <h6>India Tour (Silver)</h6>
+                      <h6>By Gourav Gupta</h6>
+                    </div>
+                    <div  className='d-flex flex-column ' style={{textAlign:"center",paddingTop:"1vh"}}> 
+                      <h6>₹ 500</h6>   
+                      <div >
+                          <ButtonGroup  aria-label="outlined button group" style={{backgroundColor:"white"}}>
+                            <Button   style={{ backgroundColor: '#E8E8E8', color:"black" }} onClick={increment}>+</Button>
+                            <Button  style={{ backgroundColor: '#E8E8E8', color:"black"}}>{counter}</Button>
+ 
+                            <Button  style={{ backgroundColor: '#E8E8E8', color:"black" }} onClick={decrement}>-</Button>
+                          </ButtonGroup>
+                      </div>
+
+                    </div>
+                  </div>
+              </div>
+
+
+
+              <div className='d-flex flex-column  ' style={{width:"100%",height:"10vh", marginBottom:"1vh",backgroundColor:"#fff",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',borderRadius:"15px",alignContent:"center"}}>
+                  <div className='d-flex justify-content-between align-itmes-center mx-5'>
+                    <div className='d-flex flex-column ' style={{paddingTop:"2vh"}}>
+                      <h6>India Tour (Silver)</h6>
+                      <h6>By Gourav Gupta</h6>
+                    </div>
+                    <div  className='d-flex flex-column ' style={{textAlign:"center",paddingTop:"1vh"}}> 
+                      <h6>₹ 500</h6>   
+                      <div >
+                          <ButtonGroup  aria-label="outlined button group" style={{backgroundColor:"white"}}>
+                            <Button   style={{ backgroundColor: '#E8E8E8', color:"black" }} onClick={increment}>+</Button>
+                            <Button  style={{ backgroundColor: '#E8E8E8', color:"black"}}>{counter}</Button>
+ 
+                            <Button  style={{ backgroundColor: '#E8E8E8', color:"black" }} onClick={decrement}>-</Button>
+                          </ButtonGroup>
+                      </div>
+
+                    </div>
+                  </div>
+              </div>
+              
+              </Grid>
+              {/* Add more Grid items for additional content */}
+            </Grid>
+      
+        </DialogContent>
+        <DialogActions className='d-flex justify-content-between'>
+          <Button variant="contained" style={{marginLeft:"1vw",marginBottom:"1vh",padding:"1vh 1.5vw",backgroundColor:"#EC167F"}} onClick={handleClose} color="primary">
+            Cancel
+          </Button>
+          <Button variant="contained" style={{marginRight:"1vw",marginBottom:"1vh",padding:"1vh 2vw",backgroundColor:"#EC167F"}} onClick={handleClose} color="primary">
+            Next
+          </Button>
+        
+        </DialogActions>
+      </Dialog>
     </div>
   )
 }

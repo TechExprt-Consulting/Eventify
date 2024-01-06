@@ -23,9 +23,7 @@ const LandingpageEventCarousel = () => {
         slidesPerView={5}
         centeredSlides={true}
         spaceBetween={20}
-        pagination={{
-          type: 'fraction',
-        }}
+        
         loop={true} 
         navigation={true}
         modules={[Pagination, Navigation]}

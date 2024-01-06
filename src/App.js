@@ -26,6 +26,7 @@ import LandingpageCarousel from './components/landingPagecarousel/LandingpageCar
 import LandingpageCardCarousel from './components/landingPagecarousel/LandingpageCardCarousel';
 import LandingpageEventCarousel from './components/landingPagecarousel/LandingpageEventCarousel';
 import EventpageCarousel from './components/events/eventpages/EventpageCarousel';
+import PaymentCardPage from './components/paymentcardpage/PaymentCardPage';
 function App() {
   return (
     <div className="App">
@@ -48,7 +49,8 @@ function App() {
           <Route path="/landingpageCardCarousel"  element={<LandingpageCardCarousel/>} />
           <Route path="/landingpageEventCarousel"  element={<LandingpageEventCarousel/>} />
           <Route path="/eventpageCarousel"  element={<EventpageCarousel/>} />
-          <Route path="/eventBannerPage"  element={<EventBannerPage/>} />
+          <Route path="/eventBannerPage"  element={<EventBannerPage/>} />PaymentCardPage
+          <Route path="/paymentCardPage"  element={<PaymentCardPage/>} />
         </Routes>
         
      

@@ -18,13 +18,16 @@ import { useNavigate } from "react-router-dom";
 import { getreadAllEventdata } from '../store/action/action';
 import Card from '@mui/material/Card';
 import img3 from "../images/m23.jpeg"
+import img4 from "../images/sambhadur.jpeg"
+import img5 from "../images/aqua.jpeg"
+
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 
 
 
 const Event = () => {
-
+  const images=[img3,img4,img5]
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [eventdata,seteventdata] =useState([])
@@ -162,10 +165,10 @@ const Event = () => {
 
             <Grid item xs={9} sm={9} md={9} lg={9}  >
               
-              <Grid item xs={12} sm={ 12} md={12} lg={12}style={{margin:"1vw",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',padding:"1vw",borderRadius:"1vw"}}>
+              <Grid item xs={12} sm={ 12} md={12} lg={12} style={{margin:"1vw",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',padding:"1vw",borderRadius:"1vw"}}>
                 
                    <div className=''>
-                      <div className='mt-3 mb-2'><p style={{fontSize:"1.6vw",fontWeight:"600",marginLeft:"1vw"}}>Movies in indore</p></div>  
+                      <div className='mt-3 mb-2'><p style={{fontSize:"1.6vw",fontWeight:"600",marginLeft:"1vw"}}>Events in indore</p></div>  
                               <div className='mt-2  d-flex flex-wrap justify-content-start'>
                                   
                                   {filteredEvents.map((e,index) => (
