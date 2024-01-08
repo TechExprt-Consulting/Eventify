@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import Header from './header/Header'
 import EventCarousel from './events/eventpages/EventCarousel'
-import Eventcard from './events/eventpages/Eventcard'
 import Grid from '@material-ui/core/Grid';
 import KeyboardArrowDownSharpIcon from '@mui/icons-material/KeyboardArrowDownSharp';
 import KeyboardArrowUpSharpIcon from '@mui/icons-material/KeyboardArrowUpSharp';
@@ -13,11 +12,7 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import TextField from '@mui/material/TextField';
-import IconButton from '@mui/material/IconButton';
-import SearchIcon from '@mui/icons-material/Search';
-import SearchBar from "material-ui-search-bar";
-import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+import InputAdornment from '@mui/material/InputAdornment';
 import Footer2 from './footer/Footer2';
 import EventpageCarousel from './events/eventpages/EventpageCarousel';
 import img3 from "../images/m23.jpeg"
@@ -29,6 +24,8 @@ import CardMedia from '@mui/material/CardMedia';
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import {getreadAllMoviedata} from '../store/action/action'
+import TextField from '@mui/material/TextField';
+import SearchIcon from '@mui/icons-material/Search';
 const Movie = () => {
 
   const imageses=[{
@@ -87,13 +84,6 @@ const Movie = () => {
       const filtered = moviedata.filter((event) => event.language === category);
       setFilteredMovies(filtered);
     }
-
-
-
-  
-
-
-    
   };
 
 
@@ -122,6 +112,15 @@ const Movie = () => {
 
   const [searchTerm, setSearchTerm] = useState('');
 
+  const movieBanner =(movieid)=>{
+  
+
+    localStorage.setItem('singleMovieId', movieid);
+    const data =localStorage.getItem('singleMovieId')
+    console.log("ggg",data)
+     navigate('/movie/banner')
+    }
+
 
 
   return (
@@ -132,7 +131,24 @@ const Movie = () => {
   <Grid item xs={12} sm={12} md={12} lg={12}>
     <EventpageCarousel/>
   </Grid>
+ 
 
+  
+  <Grid item xs={12} >
+      <TextField
+          variant="outlined"
+          placeholder="Search..."
+         // onChange={onChange}
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <SearchIcon />
+              </InputAdornment>
+            ),
+          }}
+        />
+  </Grid>
+    
  
 
   <div className="d-flex justify-content-center" style={{width:"100vw"}}>
@@ -229,7 +245,7 @@ const Movie = () => {
                               <div className='mt-2  d-flex flex-wrap justify-content-start'>
                                   
                                   {filteredMovies.map((m,index) => (
-                                      <Card  key={index}  sx={{ width:310,boxShadow:" rgba(0, 0, 0, 0.01) 0px 3px 5px",marginBottom: 8, marginRight: 2,marginLeft:2, transition: 'transform 0.3s','&:hover': { transform: 'scale(1.05)', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',cursor:"pointer"} }} className='card-movies'>
+                                      <Card  key={index}  onClick={()=>movieBanner(m.id)} sx={{ width:310,boxShadow:" rgba(0, 0, 0, 0.01) 0px 3px 5px",marginBottom: 8, marginRight: 2,marginLeft:2, transition: 'transform 0.3s','&:hover': { transform: 'scale(1.05)', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',cursor:"pointer"} }} className='card-movies'>
                                       <CardMedia
                                           sx={{ height: 290, objectFit: 'cover' }}
                                        

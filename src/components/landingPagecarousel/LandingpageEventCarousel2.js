@@ -12,8 +12,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import {getreadAllEventdata} from '../../store/action/action'
 
-const LandingpageEventCarousel = () => {
-   
+const LandingpageEventCarousel2 = () => {
     const [swiperRef, setSwiperRef] = useState(null);
     const eventsData = useSelector((state) => state.event);
    
@@ -32,15 +31,28 @@ const LandingpageEventCarousel = () => {
             if(eventsData.readAllevent !== null && eventsData.readAllevent !== undefined ){
              
               seteventdata(eventsData.readAllevent)
+             // localStorage.setItem("homeEventid",)
            
             }
         }
         
       }, [eventsData]);
 
+
+
+      
+ const cardeventBanner =(eventid)=>{
+  
+
+    localStorage.setItem('homeEventId', eventid);
+   
+ 
+     navigate('/eventBannerPage')
+    }
+
   return (
-    <div>
-    <Grid container justifyContent="center" >
+    <>
+     <Grid container justifyContent="center" >
       <Grid item xs={12} md={9} style={{backgroundColor:""}}>
       <div><p style={{fontSize:"1.6vw",fontWeight:"600"}}>Events</p></div>  
       <Swiper
@@ -56,7 +68,7 @@ const LandingpageEventCarousel = () => {
       >
      {
         eventdata.map((e,index)=>(
-            <SwiperSlide key={index} style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
+            <SwiperSlide onClick={()=>(cardeventBanner(e.id))} key={index} style={{backgroundColor:"",height:"64vh",width:"15.5vw",borderRadius:"1vw"}}>
                 <div>
                 <img style={{height:"45vh",width:"100%", borderRadius: '1vw'}} src={cardimg2}/>
                 <h6 style={{padding:"0.5vh 1vh",fontSize:"1.1vw",fontWeight:"600"}}>{e.eventName}</h6>
@@ -70,9 +82,8 @@ const LandingpageEventCarousel = () => {
       </Swiper>
       </Grid>
     </Grid>
-      
-    </div>
+    </>
   )
 }
 
-export default LandingpageEventCarousel
+export default LandingpageEventCarousel2

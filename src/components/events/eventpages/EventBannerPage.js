@@ -16,7 +16,7 @@ const EventBannerPage = () => {
   const [eventBanner,setEventBanner]=useState([])
   const [eventDate,seteventDate]=useState('')
   const [counter,setCounter]=useState(0)
-
+  console.log("dddd",eventsBannerData)
   const increment =()=>{
     setCounter(counter+1)
   }
@@ -40,7 +40,22 @@ const EventBannerPage = () => {
   };
 
   useEffect(() => {
-    dispatch(getEventBannerById());
+
+    const eventoneId = localStorage.getItem('singleEventId');
+    const eventoneId2 = localStorage.getItem('homeEventId');
+  
+    let eventId; // Declare eventId outside of the if-else blocks
+  
+    if (eventoneId != null && eventoneId !== undefined) {
+      eventId = eventoneId;
+    } else if (eventoneId2 != null && eventoneId2 !== undefined) {
+      eventId = eventoneId2;
+    } else {
+      eventId = null;
+    }
+  
+  
+    dispatch(getEventBannerById(eventId));
   }, [dispatch]);
 
   useEffect(() => {

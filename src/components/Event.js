@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-
-import Eventcard  from './events/eventpages/Eventcard'
 import Grid from '@material-ui/core/Grid';
 import KeyboardArrowDownSharpIcon from '@mui/icons-material/KeyboardArrowDownSharp';
 import KeyboardArrowUpSharpIcon from '@mui/icons-material/KeyboardArrowUpSharp';
@@ -95,7 +93,11 @@ const Event = () => {
   };
 
  const cardBanner =(eventid)=>{
- console.log("eventclicked",eventid)
+  
+
+ localStorage.setItem('singleEventId', eventid);
+ const data =localStorage.getItem('singleEventId')
+ 
   navigate('/eventBannerPage')
  }
 

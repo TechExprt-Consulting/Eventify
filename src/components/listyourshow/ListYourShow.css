@@ -1,7 +1,6 @@
 .mainlistyourshow{
     display: flex;
-    position: relative;
-    bottom: 10vh;
+   
 }
 
 .ListInfo{
@@ -69,7 +68,7 @@
 #otpbutton{
     width: 100%;
     color: white;
-    background-color:rgb(221,221,221);
+    background-color:#EC167F;
     font-weight: 600;
 }
 

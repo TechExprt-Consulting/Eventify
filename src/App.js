@@ -10,7 +10,7 @@ import TimeCounter from './components/timeCounter/TimeCounter';
 import BannerSection from './components/movies/bannerSection/BannerSection';
 import MainBannerSearch from './components/main-banner-search/MainBannerSearch';
 import EventCarousel from './components/events/eventpages/EventCarousel';
-import Eventcard from './components/events/eventpages/Eventcard';
+
 import Footer2 from './components/footer/Footer2';
 import Home from './components/Home';
 import Movie from './components/Movie';
@@ -27,6 +27,7 @@ import LandingpageCardCarousel from './components/landingPagecarousel/Landingpag
 import LandingpageEventCarousel from './components/landingPagecarousel/LandingpageEventCarousel';
 import EventpageCarousel from './components/events/eventpages/EventpageCarousel';
 import PaymentCardPage from './components/paymentcardpage/PaymentCardPage';
+
 function App() {
   return (
     <div className="App">

@@ -31,13 +31,13 @@ export const getreadAllEventdata = () => {
   };
 
 
-export const getEventBannerById = () => {
+export const getEventBannerById = (eventId) => {
   return (dispatch) => {
-    dispatch({ type: FETCH_MOVIE_REQUEST });
+    dispatch({ type: FETCH_EVENTBANNER_BY_ID_REQUEST });
     axios
-      .get('http://localhost:8080/api/events/getById?eventId=1')
+      .get(`http://localhost:8080/api/events/getById?eventId=${eventId}`)
       .then((response) => {
-        dispatch({ type: FETCH_MOVIE_SUCCESS, payload: response.data });
+        dispatch({ type: FETCH_EVENTBANNER_BY_ID_SUCCESS, payload: response.data });
       })
 
       .catch((error) => {
