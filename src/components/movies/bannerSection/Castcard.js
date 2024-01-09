@@ -13,7 +13,7 @@ import Sourabh from '../../../images/cast/sourabh.jpg'
 import { Padding } from '@mui/icons-material';
 
 
-const Castcard = () => {
+const Castcard = ({casts}) => {
     const Body = styled.div`
   background: #f3f3f3;
   position: absolute;
@@ -121,7 +121,7 @@ const Reference = styled.div`
                                 <Card>
                                 <LazyLoadImage src={ranveer}  effect="blur" />
                                 <div>
-                                    <Title>Ranveer Kapoor</Title>
+                                    <Title>{casts.actor}</Title>
                                     <span>Actor</span>
                                 
                                 </div>
@@ -133,7 +133,7 @@ const Reference = styled.div`
                                 <Card>
                                 <LazyLoadImage src={rashmika} effect="blur" />
                                 <div>
-                                    <Title>Rashmika</Title>
+                                    <Title>{casts.actress}</Title>
                                     <span>Actress</span>
                                 
                                 </div>
@@ -145,7 +145,7 @@ const Reference = styled.div`
                                 <Card>
                                 <LazyLoadImage src={bobi} effect="blur" />
                                 <div>
-                                <Title>Bobi Deol</Title>
+                                <Title>{casts.villen}</Title>
                                     <span>villen</span>
                                     
                                 </div>
@@ -157,7 +157,7 @@ const Reference = styled.div`
                                 <Card>
                                 <LazyLoadImage src={Anil} effect="blur"/>
                                 <div>
-                                    <Title>Anil Kapoor</Title>
+                                    <Title>{casts.coActor}</Title>
                                     <span>Co-Actor</span>
                                 
                                 </div>
@@ -169,7 +169,7 @@ const Reference = styled.div`
                                 <Card>
                                 <LazyLoadImage src={tripti} effect="blur"/>
                                 <div>
-                                    <Title>Tripti</Title>
+                                    <Title>{casts.coActress}</Title>
                                     <span>Co-Actress</span>
                                 
                                 </div>

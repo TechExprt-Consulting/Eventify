@@ -30,6 +30,8 @@ const Event = () => {
   const dispatch = useDispatch();
   const [eventdata,seteventdata] =useState([])
   const [filteredEvents, setFilteredEvents] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [showAll, setShowAll] = useState(false);
   const [categoryCheckboxes, setCategoryCheckboxes] = useState({
@@ -53,10 +55,13 @@ const Event = () => {
       setFilteredEvents(filtered);
     }
 
-
-
     
   };
+
+  const searchHandler =()=>{
+    const filter = eventdata.filter((item)=>item.title.toLowerCase().includes(searchTerm.toLowerCase()))
+
+  }
 
 
 
@@ -71,6 +76,7 @@ const Event = () => {
         
           seteventdata(eventsData.readAllevent)
           setFilteredEvents(eventsData.readAllevent)
+        
         }
     }
     
@@ -108,6 +114,18 @@ const Event = () => {
             <Grid item xs={12} sm={12} md={12} lg={12}>
               <EventpageCarousel/>
             </Grid>
+
+
+            <Grid container  >
+      <div className='offset-1' style={{ width: '100%',marginLeft:"11vw"  }}>
+        <div class="input-group mb-3"  style={{ width: '78vw', height:"7.5vh", boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',borderRadius: '1vw',borderStyle:"none",backgroundColor:"#f4f4f4"}}>
+          <input  style={{borderRadius: '1vw'}} type="text" class="form-control" placeholder="Search your movies..." aria-label="Username" aria-describedby="basic-addon1"/>
+        </div>
+
+      </div>
+    </Grid>
+
+
           <div className="d-flex justify-content-center" style={{width:"100vw"}}>  
           <Box className="d-flex" width={{ lg: "80vw" }} >
             <Grid item xs={3} sm={3} md={3} lg={3} >
@@ -131,7 +149,7 @@ const Event = () => {
                       aria-labelledby="demo-controlled-radio-buttons-group"
                       name="controlled-radio-buttons-group"
                       value={selectedCategory}
-                      onChange={(e) => handleCategoryChange(e.target.value)}
+                      // onChange={(e) => handleCategoryChange(e.target.value)}
                     >
                       <FormControlLabel value="All" control={<Radio />}  label=	{ <Typography style={{ fontSize:"1vw" ,padding:"1vh"}}>All</Typography> }   />
                       <FormControlLabel value="english" control={<Radio />}  label=	{ <Typography style={{ fontSize:"1vw" ,padding:"1vh"}}>English</Typography> }  />

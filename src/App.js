@@ -27,6 +27,7 @@ import LandingpageCardCarousel from './components/landingPagecarousel/Landingpag
 import LandingpageEventCarousel from './components/landingPagecarousel/LandingpageEventCarousel';
 import EventpageCarousel from './components/events/eventpages/EventpageCarousel';
 import PaymentCardPage from './components/paymentcardpage/PaymentCardPage';
+import DetailForm from './components/listyourshow/DetailForm';
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
           <Route path="/eventpageCarousel"  element={<EventpageCarousel/>} />
           <Route path="/eventBannerPage"  element={<EventBannerPage/>} />PaymentCardPage
           <Route path="/paymentCardPage"  element={<PaymentCardPage/>} />
+          <Route path="/farmdeatil"  element={<DetailForm/>} />
         </Routes>
         
      

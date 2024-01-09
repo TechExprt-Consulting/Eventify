@@ -1,6 +1,7 @@
 const initialState={
     readAllevent: [],
     readEventBannerById:[],
+    readMovieBannerById:[],
     readAllmovie: [],
     loading: false,
     error: null,
@@ -51,6 +52,28 @@ switch (action.type) {
       loading: false,
       error: action.payload,
     };
+
+
+
+    case "FETCH_MOVIEBANNER_BY_ID_REQUEST":
+    return {
+      ...state,
+      loading: true,
+      error: null,
+    };
+  case "FETCH_MOVIEBANNER_BY_ID_SUCCESS":
+    return {
+      ...state,
+      readMovieBannerById: action.payload,
+      loading: false,
+      error: null,
+    };
+  case "FETCH_MOVIEBANNER_BY_ID_FAILURE":
+    return {
+      ...state,
+      loading: false,
+      error: action.payload,
+    }; 
 
 
     case "FETCH_MOVIE_REQUEST":

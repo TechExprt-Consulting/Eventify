@@ -1,9 +1,10 @@
 .main-seat-div{
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 2vh;
     
-    padding: 1vw;
-    margin: 1vw;
-    border-radius: 1vw;
+ 
+
 }
 
 .theaterinfo{
@@ -32,6 +33,18 @@
 .theatertime{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+
+
+}
+
+.theatertimescreen{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
 }
 
 #extrainfo{
@@ -44,12 +57,14 @@
 }
 
 #time-info{
-    width: 10vw;
+    width: 7.5vw;
     border: 1px solid rgb(153,153,153);
-    height: 12vh;
+    height: 8vh;
     text-align: center;
     padding: 0;
+    margin: .2vw;
 }
 .seat-type{
     font-size: .8vw;
+    text-align: center;
 }

@@ -50,7 +50,8 @@ const Movie = () => {
   const [genereData,setgenereData] =useState([])
   const [filteredMovies, setFilteredMovies] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('all');
-
+  const [search,setSearch] = useState('')
+  const [searchfilter,setsearchfilter] =useState()
 
   
   const moviesData = useSelector((state) => state.event);
@@ -86,7 +87,7 @@ const Movie = () => {
     }
   };
 
-
+  
   
   const handleChangeSort = (event) => {
     setSortValue(event.target.value);
@@ -134,27 +135,21 @@ const Movie = () => {
  
 
   
-  <Grid item xs={12} >
-      <TextField
-          variant="outlined"
-          placeholder="Search..."
-         // onChange={onChange}
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <SearchIcon />
-              </InputAdornment>
-            ),
-          }}
-        />
-  </Grid>
+  <Grid container  >
+      <div className='offset-1' style={{ width: '100%',marginLeft:"11vw"  }}>
+        <div class="input-group mb-3"  style={{ width: '78vw', height:"7.5vh", boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',borderRadius: '1vw',borderStyle:"none",backgroundColor:"#f4f4f4"}}>
+          <input value={search} onClick={(e)=>setSearch(e.target.value)} style={{borderRadius: '1vw'}} type="text" class="form-control" placeholder="Search your movies..." aria-label="Username" aria-describedby="basic-addon1"/>
+        </div>
+
+      </div>
+    </Grid>
     
  
 
   <div className="d-flex justify-content-center" style={{width:"100vw"}}>
   <Box  width={{ lg: "80%" }} className="d-flex " >
   <Grid item xs={3} sm={3} md={3} lg={3}>
-    <Grid item xs={12} sm={12} md={12} lg={12} style={{margin:"1vw",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',padding:"1vw",borderRadius:"1vw"}}>
+    <Grid item xs={12} sm={12} md={12} lg={12} style={{margin:"1vw",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',backgroundColor:"#ffffff",padding:"1vw",borderRadius:"1vw"}}>
       <div
         className="heading d-flex justify-content-between mt-3 "
         data-toggle="collapse"
@@ -239,7 +234,7 @@ const Movie = () => {
 
   <Grid item xs={9} sm={9} md={9} lg={9}  >
     
-    <Grid item xs={12} sm={ 12} md={12} lg={12}style={{margin:"1vw",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',padding:"1vw",borderRadius:"1vw"}}>
+    <Grid item xs={12} sm={ 12} md={12} lg={12}style={{margin:"1vw",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',padding:"1vw",borderRadius:"1vw",backgroundColor:"#ffffff"}}>
                  <div className=''>
                       <div className='mt-3 mb-2'><p style={{fontSize:"1.6vw",fontWeight:"600",marginLeft:"1vw"}}>Events in indore</p></div>  
                               <div className='mt-2  d-flex flex-wrap justify-content-start'>

@@ -78,10 +78,10 @@ const EventBannerPage = () => {
       </Grid>
 
       {/* Second Row */}
-      <Grid item xs={12} sm={9}  container sx={{ borderRadius: '8px',marginTop:"5vh" }}>
+      {/* <Grid item xs={12} sm={12}  container sx={{ borderRadius: '8px',marginTop:"5vh",justifyContent:"center",width:"100vw" ,height:"30vh"}}>
         
-        <Box className="d-flex " style={{width:"100%" }}>
-            <Box style={{boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',width:"100%",height:"100%" ,marginRight:"1vw"}}>
+        <Box className="d-flex flex-wrap " style={{height:"50vh",width:"75vw",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}}>
+            <Box style={{boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',width:"30vw",height:"15vh" ,marginRight:"1vw",paddingLeft:0}}>
 
               <Box className="d-flex flex-wrap  align-items-center" style={{height:"218px" ,boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',borderRadius:".5vw"}}>
                 <img  style={{marginLeft:"1vw",borderRadius:"190px",height:"12.75vh",width:"6.5vw"}} src="abhisek33.jpg"/>
@@ -93,7 +93,7 @@ const EventBannerPage = () => {
               </Box>
             </Box>
 
-            <Box style={{width:"100%" ,marginLeft:".5vw"}}>
+            <Box style={{width:"30vw" ,height:"15vh",marginLeft:".5vw"}}>
                 <Box style={{boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',borderRadius:".2vw"}}>
                   <div className='d-flex flex-column justify-content-center p-4'>
                     <h6 style={{fontSize:"1.1vw",fontWeight:"600"}}>Vijay Nagar,indore</h6>
@@ -106,12 +106,34 @@ const EventBannerPage = () => {
         </Box>
 
 
+      </Grid> */} 
+      <Grid item xs={12} sm={12}  container sx={{  padding: '16px', borderRadius: '8px' ,marginTop:"auto",width:"100vw",justifyContent:"center"}}>
+      <div className='d-flex ' style={{width:"75vw"}}>
+
+         <div style={{width:"38vw"}}>
+             <Box className="d-flex flex-wrap  align-items-center" style={{height:"28vh" ,boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',borderRadius:".5vw",width:"100%"}}>
+                <img  style={{marginLeft:"1vw",borderRadius:"190px",height:"12.75vh",width:"6.5vw"}} src="abhisek33.jpg"/>
+                <h6 style={{marginLeft:"2vw",fontSize:"1.3vw",fontWeight:"600"}}>{eventBanner.performer} </h6>
+              </Box>
+              <Box  className="d-flex flex-column justify-ciontent-start flex-wrap " style={{height:"28vh",width:"100%",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',marginTop:"1vh",padding:"1vw",borderRadius:".5vw"}}>
+                <h6 style={{ fontSize:"1.1vw"}}>About</h6>
+                <h6>{eventBanner.description}</h6>
+              </Box>
+         </div>
+         <div style={{width:"38vw",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',marginLeft:".8vw"}}>
+                  <div className='d-flex flex-column justify-content-center p-4'>
+                    <h6 style={{fontSize:"1.1vw",fontWeight:"600"}}>Vijay Nagar,indore</h6>
+                    <img src='Rectangle 354.png'/>
+                  </div>
+         </div>
+      </div>
+      
       </Grid>
-
-
       {/* Third Row */}
-      <Grid item xs={12} sm={9}  container sx={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', padding: '16px', borderRadius: '8px' ,marginTop:"4vh"}}>
-        <Box className="d-flex justify-content-between" style={{width:"100%"}}>
+    
+     <Grid item xs={12} sm={12}  container sx={{padding: '16px', borderRadius: '8px' ,marginTop:"auto",width:"100vw",justifyContent:"center"}}>
+       
+        <Box className="d-flex justify-content-between" style={{width:"75vw",boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',padding:"1vw"}}>
           <Box >
              <h6 style={{fontSize:"1.2vw"}}>{eventBanner.performer}</h6>
              <p style={{fontSize:"1vw",fontWeight:"600",marginTop:"1.3vh"}}>{eventBanner.category} | {eventBanner.language} | 16+yrs | {eventBanner.duration} hr</p>
@@ -129,7 +151,8 @@ const EventBannerPage = () => {
           </Box>
         </Box>
       </Grid>
-      
+    
+
 
       {/* Fourth Row */}
       <Grid item xs={12} sm={9}  container sx={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', padding: '16px', borderRadius: '8px' ,marginTop:"4vh"}}>

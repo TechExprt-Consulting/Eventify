@@ -10,16 +10,11 @@
     bottom:10vh;
 }
 .about-section{
-    padding: 0 2vw;
+   
     margin-top: 3vh;
 }
-.banner-movie-info{
-   
-    /* line-height: 1.5vh; */
-   
-    padding-left: 2vw;
 
-}
+
 
 .title-movie-banner{
     font-size: 1.6vw;
@@ -31,7 +26,7 @@
 }
 
 .movie-all-info{
-    width: 45vw;
+    width: 100%;
 }
 
 .sub-date-heading{
@@ -52,7 +47,11 @@
 #days{
     font-size: 1.4vw;
 }
-.date-calander{
-    width: 70vw;
-    padding-left: 1.5vw;
+
+.swiper-button-next,
+.swiper-button-prev {
+    font-size: 20px !important
+   
+  
 }
+
